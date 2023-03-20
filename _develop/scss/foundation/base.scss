@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;700;800;900&display=swap");
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+a,
+a:visited,
+button {
+  display: inline-block;
+  text-decoration: none;
+}
+
+html {
+  background: #2C2C2C;
+
+  &.scroll-prevent {
+    /*動き固定*/
+    position: fixed;
+    /*奥行きを管理*/
+    z-index: -1;
+    /*下2つで背景を元のサイズのまま表示*/
+    width: 100%;
+    height: 100%;
+  }
+}
+
+body {
+  font-weight: 400;
+  font-family: "Noto Sans JP", sans-serif !important;
+  line-height: 1;
+  color: #1C1C1C;
+  font-size: 0.1rem;
+
+  // スクロールバーを非表示
+  // /* IE, Edge 対応 */
+  // -ms-overflow-style: none;
+  // /* Firefox 対応 */
+  // scrollbar-width: none;
+
+  // /* Chrome, Safari 対応 */
+  // &::-webkit-scrollbar {
+  //   display: none;
+  // }
+
+  &.is-modal-open {
+    overflow-y: hidden;
+  }
+}
+
+// Safari resize fix
+:root {
+  min-height: 0vw;
+}
+
+@include full {
+  html {
+    font-size: calc(100px * .75); // 掛の値 を変更することでmaxの全体サイズを調整できる
+  }
+}
+
+@include md {
+  html {
+    font-size: calc(100vw / 18); // 割の値 を変更することでpc可変時の全体サイズを調整できる
+  }
+}
+
+@include sp {
+  html {
+    font-size: calc(100vw / 3.75); // 割の値 を変更することでsp可変時の全体サイズを調整できる
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+// IE11ではセレクトボックスの矢印を非表示
+select::-ms-expand {
+  display: none;
+}
+
+.is-pc {
+  @include pc {
+    display: block;
+  }
+
+  @include sp {
+    display: none;
+  }
+}
+
+.is-sp {
+  @include pc {
+    display: none;
+  }
+
+  @include sp {
+    display: block;
+  }
+}
+
+.is-pc-import {
+  @include pc {
+    display: flex !important;
+  }
+
+  @include sp {
+    display: none !important;
+  }
+}
+
+.is-sp-import {
+  @include pc {
+    display: none !important;
+  }
+
+  @include sp {
+    display: flex !important;
+  }
+}

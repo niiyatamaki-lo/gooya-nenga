@@ -1,0 +1,81 @@
+.l-footer {
+  &__contents {
+    background: #E4E4E4;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.4rem 0 1rem 1.72rem;
+
+    @include sp {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.41rem 0.23rem;
+    }
+  }
+
+  &__logo {
+    width: 2.05rem;
+
+    @include sp {
+      width: 1.3rem;
+    }
+  }
+
+  &__list {
+    margin: 0.81rem 0 0 0;
+
+    @include sp {
+      margin: 0.76rem 0 0 0;
+    }
+  }
+
+  &__item {
+    margin: 0.42rem 0;
+
+    @include sp {
+      margin: 0.28rem 0;
+    }
+  }
+
+  &__link {
+    font-size: .185rem;
+    color: #2C2C2C;
+    transition: all .1s 0s linear;
+
+    @include sp {
+      font-size: .15rem;
+      color: #2C2C2C;
+      transition: all .1s 0s linear;
+    }
+
+    &:hover {
+      text-decoration: underline !important;
+      opacity: .6 !important;
+    }
+  }
+
+  &__wave {
+    width: 11.9rem;
+
+    @include sp {
+      display: none;
+    }
+  }
+
+  &__copyright {
+    text-align: center;
+    margin: 4.4rem 0 0 0;
+    font-size: .15rem;
+    padding: 0 0 0.3rem 0;
+
+    @include sp {
+      text-align: center;
+      margin: 0.4rem 0 0 0;
+      font-size: .145rem;
+      padding: 0 0 0.22rem 0;
+      letter-spacing: .01rem;
+    }
+  }
+}

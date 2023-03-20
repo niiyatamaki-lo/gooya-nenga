@@ -1,0 +1,63 @@
+// ブレイクポイントを管理
+@mixin full {
+  @media screen and (min-width: 1241px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media screen and (min-width: 651px) and (max-width: 1240px) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media screen and (min-width: 651px) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media screen and (max-width: 650px) {
+    @content;
+  }
+}
+
+@mixin media-retina {
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx) {
+    @content;
+  }
+}
+
+@mixin font-face(
+  $font-family,
+  $file-path,
+  $font-weight: normal,
+  $font-style: normal
+) {
+  @font-face {
+    font-family: $font-family;
+    src: url("#{$file-path}.eot");
+    src: url("#{$file-path}.eot?#iefix") format("embedded-opentype"),
+      url("#{$file-path}.woff2") format("woff2"),
+      url("#{$file-path}.woff") format("woff"),
+      url("#{$file-path}.ttf") format("truetype"),
+      url("#{$file-path}.svg##{$font-family}") format("svg");
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
+
+  // Chrome for Windows rendering fix: http://www.adtrak.co.uk/blog/font-face-chrome-rendering/
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    @font-face {
+      font-family: $font-family;
+      src: url("#{$file-path}.svg##{$font-family}") format("svg");
+    }
+  }
+}
+
+// @font-face {
+//   font-family: "sample";
+//   src: url('/assets/fonts/sample.woff');
+// }

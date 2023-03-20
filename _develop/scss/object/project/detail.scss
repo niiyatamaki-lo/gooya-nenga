@@ -1,0 +1,217 @@
+.p-detail {
+  margin: .6rem 0 0 0;
+
+  @include sp {
+    margin: 0.88rem 0 0 0;
+  }
+
+  &__list {
+    display: flex;
+
+    @include sp {
+      display: block;
+    }
+
+    & li:first-of-type {
+      @include sp {
+        width: 100%;
+        display: block;
+        padding: 1rem 0 0;
+        position: relative;
+        overflow: hidden;
+      }
+
+      &::after {
+        content: '';
+        background: url(/assets/images/wave.png);
+        background-size: cover;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50.4%);
+        width: 100%;
+        height: 34vw;
+        max-width: 1250px;
+        max-height: 800px;
+        z-index: -1;
+        background-position: center;
+
+        @include sp {
+          content: '';
+          background: url(/assets/images/wave.png);
+          background-size: cover;
+          position: absolute;
+          top: 1.9rem;
+          left: 0;
+          transform: none;
+          width: 100%;
+          height: 68vw;
+          max-width: 1250px;
+          max-height: 800px;
+          z-index: -1;
+          background-position: center;
+        }
+      }
+    }
+
+    & li:last-of-type {
+      @include sp {
+        width: 100%;
+        display: block;
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+        margin: 0.2rem 0 0 0;
+      }
+
+      &::after {
+        content: '';
+        background: url(/assets/images/wave.png);
+        background-size: cover;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -49.6%);
+        width: 100%;
+        height: 34vw;
+        max-width: 1250px;
+        max-height: 800px;
+        z-index: -1;
+        background-position: center;
+
+        @include sp {
+          content: '';
+          background: url(/assets/images/wave.png);
+          background-size: cover;
+          position: absolute;
+          top: 1.35rem;
+          left: 0;
+          transform: none;
+          width: 100%;
+          height: 68vw;
+          max-width: 1250px;
+          max-height: 800px;
+          z-index: -1;
+          background-position: center;
+        }
+      }
+
+      & .p-detail__inner {
+        @include sp {
+          overflow-x: hidden;
+        }
+      }
+
+      & .p-detail__image {
+        width: 7.9rem;
+
+        @include sp {
+          width: 130%;
+          transform: translate(-11.5%, 0);
+        }
+      }
+    }
+  }
+
+  &__item {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 0 0.9rem;
+    position: relative;
+    overflow: hidden;
+
+    @include sp {
+      width: 100%;
+      display: block;
+      padding: 1rem 0 0.9rem;
+      position: relative;
+      overflow: hidden;
+    }
+  }
+
+  &__image {
+    width: 6rem;
+    margin: 0 auto;
+    height: 6.6rem;
+
+    @include sp {
+      width: 91%;
+      margin: 0 auto;
+      height: auto;
+    }
+  }
+
+  &__head {
+    text-align: center;
+    font-size: .24rem;
+    letter-spacing: .06rem;
+    font-weight: 500;
+
+    @include sp {
+      text-align: center;
+      font-size: .17rem;
+      letter-spacing: .01rem;
+      font-weight: 500;
+      margin: 0.29rem 0 0 0;
+    }
+  }
+
+  &__wat {
+    font-size: .2rem;
+    text-align: center;
+    margin: 0.14rem 0 0 0;
+    font-weight: 500;
+    letter-spacing: .045rem;
+
+    @include sp {
+      font-size: .145rem;
+      text-align: center;
+      margin: 0.1rem 0 0 0;
+      font-weight: 500;
+      letter-spacing: .028rem;
+    }
+  }
+
+  &__text {
+    font-size: .16rem;
+    margin: 0.5rem auto 0;
+    line-height: 1.7;
+    width: 4.7rem;
+    position: relative;
+
+    @include sp {
+      font-size: 0.13rem;
+      margin: 0.28rem auto 0;
+      line-height: 2.1;
+      width: 100%;
+      position: relative;
+      padding: 0 0.25rem;
+      letter-spacing: .09em;
+    }
+
+    &::before {
+      content: '';
+      width: 0.8rem;
+      height: 1px;
+      background-color: #707070;
+      position: absolute;
+      top: -0.28rem;
+      left: 50%;
+      transform: translate(-50%, 0);
+
+      @include sp {
+        content: '';
+        width: 0.75rem;
+        height: 1px;
+        background-color: #707070;
+        position: absolute;
+        top: -0.12rem;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+    }
+  }
+}
