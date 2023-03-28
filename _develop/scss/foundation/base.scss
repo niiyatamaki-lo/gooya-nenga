@@ -57,7 +57,7 @@ body {
 
 @include full {
   html {
-    font-size: calc(100px * .75); // 掛の値 を変更することでmaxの全体サイズを調整できる
+    font-size: calc(100px * 1); // 掛の値 を変更することでmaxの全体サイズを調整できる
   }
 }
 
