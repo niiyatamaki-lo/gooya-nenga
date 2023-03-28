@@ -9,6 +9,8 @@
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
 
+  opacity: 0;
+
   @include sp {
     margin: 0.88rem 0 0 0;
   }
