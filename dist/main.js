@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("/**\n * アドレスバーを含まない純粋な表示領域を取得、cssプロパティに設定\n */\nvar setFillHeight = function setFillHeight() {\n  var vh = window.innerHeight * 0.01;\n  document.documentElement.style.setProperty('--vh', \"\".concat(vh, \"px\"));\n  console.log('init');\n};\n\n/**\n * 初期発火関数をまとめる\n */\nvar init = function init() {\n  setFillHeight();\n};\ninit();\n\n//# sourceURL=webpack://aurola/./js/common.js?");
+eval("/**\n * アドレスバーを含まない純粋な表示領域を取得、cssプロパティに設定\n */\nvar setFillHeight = function setFillHeight() {\n  var vh = window.innerHeight * 0.01;\n  document.documentElement.style.setProperty('--vh', \"\".concat(vh, \"px\"));\n};\n\n/**\n * 初期発火関数をまとめる\n */\nvar init = function init() {\n  setFillHeight();\n};\ninit();\n\n//# sourceURL=webpack://aurola/./js/common.js?");
 
 /***/ }),
 
