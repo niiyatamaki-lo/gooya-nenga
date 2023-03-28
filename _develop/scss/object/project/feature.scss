@@ -1,10 +1,7 @@
 .p-feature {
-  position: absolute;
-  top: 0;
-  left: 0;
+  // background: url(/assets/images/bg_black.png);
+  // background-size: cover;
   width: 100%;
-  background: url(/assets/images/bg_black.png);
-  background-size: cover;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   display: flex;
@@ -12,7 +9,10 @@
   align-items: center;
   flex-direction: column;
 
-  opacity: 0;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // opacity: 0;
 
   &__contents {
     height: 100vh;
@@ -30,6 +30,8 @@
 
   &__headArea {
     padding: 0 0 0 0.34rem;
+    position: relative;
+    opacity: 0;
 
     @include sp {
       padding: 0 0 0 0.2rem;
@@ -172,6 +174,9 @@
     border-right: solid 0.1px #9999;
     padding: 0.6rem 0.4rem;
     position: relative;
+
+    opacity: 0;
+    transform: translate(0, 100px);
 
     @include sp {
       width: 89%;

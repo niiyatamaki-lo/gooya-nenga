@@ -1,15 +1,15 @@
 .p-detail {
-  background: url(/assets/images/bg_white.png);
-  background-size: cover;
-  background-color: rgba(255, 255, 255, 0.7);
-  background-blend-mode: lighten;
-  position: absolute;
-  top: 0;
-  left: 0;
+  // background: url(/assets/images/bg_white.png);
+  // background-size: cover;
+  // background-color: rgba(255, 255, 255, 0.7);
+  // background-blend-mode: lighten;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
 
-  opacity: 0;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // opacity: 0;
 
   @include sp {
     margin: 0.88rem 0 0 0;
@@ -139,6 +139,7 @@
     padding: 1rem 0 0.9rem;
     position: relative;
     overflow: hidden;
+    opacity: 0;
 
     @include sp {
       width: 100%;
@@ -166,6 +167,8 @@
     font-size: .24rem;
     letter-spacing: .06rem;
     font-weight: 500;
+    transform: translate(0 100px);
+    opacity: 0;
 
     @include sp {
       text-align: center;
@@ -182,6 +185,8 @@
     margin: 0.14rem 0 0 0;
     font-weight: 500;
     letter-spacing: .045rem;
+    transform: translate(0 100px);
+    opacity: 0;
 
     @include sp {
       font-size: .145rem;
@@ -198,6 +203,8 @@
     line-height: 1.7;
     width: 4.7rem;
     position: relative;
+    transform: translate(0 100px);
+    opacity: 0;
 
     @include sp {
       font-size: 0.13rem;

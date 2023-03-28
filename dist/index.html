@@ -23,7 +23,7 @@
 </head>
 
 <body>
-  <div class="l-wrap">
+  <div id="l-wrap" class="l-wrap">
     <div class="l-wrap__contents">
       <header class="l-header">
         <div class="l-header__contents">
@@ -46,8 +46,10 @@
         </div>
       </header>
       <main class="l-wrap__main">
-        <section class="p-hero">
-          <div class="p-hero__contents">
+        <div id="bg-white" class="l-wrap__background--white"></div>
+        <div id="bg-black" class="l-wrap__background--black"></div>
+        <section id="p-hero" class="p-hero">
+          <div id="p-hero__contents" class="p-hero__contents">
             <div class="p-hero__inner">
               <div class="p-hero__textArea">
                 <!-- <div class="p-hero__logo">
@@ -84,15 +86,15 @@
             </div>
           </div>
         </section>
-        <section class="p-concept">
+        <section id="p-concept" class="p-concept">
           <div class="p-concept__contents">
-            <div class="p-concept__image"></div>
-            <div class="p-concept__inner">
+            <div id="p-concept__image" class="p-concept__image"></div>
+            <div id="p-concept__inner" class="p-concept__inner">
               <div class="p-concept__logo">
                 <img src="/assets/images/logo_mark_white.png" alt="AUROLA">
               </div>
               <h2 class="p-concept__head">“夜明け”が来る<br />新しい時代の始まり</h2>
-              <div class="p-concept__textArea">
+              <div id="p-concept__textArea" class="p-concept__textArea">
                 <p class="p-concept__text">
                   私たちは毎日、様々な電子機器と共に生活をしており、『エネルギー』は無くてはならない存在です。近年では環境への配慮として、世界的に再生可能エネルギーの普及が求められています。そんな中、家庭で再生可能エネルギーを自給自足できたら、どんなに素晴らしいことでしょうか。
                 </p>
@@ -103,28 +105,28 @@
             </div>
           </div>
         </section>
-        <section class="p-detail">
+        <section id="p-detail" class="p-detail">
           <div class="p-detail__contents">
             <ul class="p-detail__list">
-              <li class="p-detail__item">
+              <li id="p-detail__item01" class="p-detail__item">
                 <div class="p-detail__inner">
                   <div class="p-detail__image">
                     <img src="/assets/images/item01.png" alt="">
                   </div>
-                  <h3 class="p-detail__head">蓄電池ユニット</h3>
-                  <p class="p-detail__wat">5kWh/10kWh/15kWh</p>
-                  <p class="p-detail__text">業界最高クラスの機能と性能を搭載した、住宅用蓄電池。<br class="is-pc" />
+                  <h3 id="p-detail__head01" class="p-detail__head">蓄電池ユニット</h3>
+                  <p id="p-detail__wat01" class="p-detail__wat">5kWh/10kWh/15kWh</p>
+                  <p id="p-detail__text01" class="p-detail__text">業界最高クラスの機能と性能を搭載した、住宅用蓄電池。<br class="is-pc" />
                     日常生活では「経済的なエコライフ」を実現し、もしもの災害・停電時には「家族のいのちを守る」ための機能と安全性が、コンパクトなボディにギュッと詰まっています。</p>
                 </div>
               </li>
-              <li class="p-detail__item">
+              <li id="p-detail__item02" class="p-detail__item">
                 <div class="p-detail__inner">
                   <div class="p-detail__image">
                     <img src="/assets/images/item02.png" alt="">
                   </div>
-                  <h3 class="p-detail__head">ハイブリッド型PCS</h3>
-                  <p class="p-detail__wat">　</p>
-                  <p class="p-detail__text">
+                  <h3 id="p-detail__head02" class="p-detail__head">ハイブリッド型PCS</h3>
+                  <p id="p-detail__wat02" class="p-detail__wat">　</p>
+                  <p id="p-detail__text02" class="p-detail__text">
                     エネルギーを「つくる」から「つかう」へ、業界トップレベルの高効率で変換。ファンレス設計による静音稼動を実現しながらも、AIによる放電監視や停電時の自動切替など、家族にうれしい安心・安全性能もしっかり搭載しています。
                   </p>
                 </div>
@@ -132,17 +134,17 @@
             </ul>
           </div>
         </section>
-        <section class="p-feature">
+        <section id="p-feature" class="p-feature">
           <div class="p-feature__contents">
             <div class="p-feature__inner">
-              <div class="p-feature__headArea">
+              <div id="p-feature__headArea" class="p-feature__headArea">
                 <div class="p-feature__logo">
                   <img src="/assets/images/logo_mark_white.png" alt="AUROLA">
                 </div>
                 <h2 class="p-feature__head">AUROLAの特徴</h2>
               </div>
               <ul class="p-feature__iconList">
-                <li class="p-feature__iconItem">
+                <li id="p-feature__iconItem01" class="p-feature__iconItem">
                   <div class="p-feature__icon">
                     <img src="/assets/images/feature_icon01.png" alt="">
                   </div>
@@ -152,7 +154,7 @@
                     5kWh単位、最大 30kWh まで、あなたのライフステージに応じて拡張できます。</p>
                   <p class="p-feature__annotation">※15kWh以上での設置の場合、消防への届出が必要です。<br />詳細は販売店にお問い合わせください。</p>
                 </li>
-                <li class="p-feature__iconItem">
+                <li id="p-feature__iconItem02" class="p-feature__iconItem">
                   <div class="p-feature__icon">
                     <img src="/assets/images/feature_icon02.png" alt="">
                   </div>
@@ -162,7 +164,7 @@
                     蓄電池の寿命を表すサイクル数は、業界最長の「12,000」回。1日1サイクルとして、約33年もの長期使用を見込めます。あなたのいつもの生活に、ずっと、安心を提供します。</p>
                   <p class="p-featrue__annotation">　</p>
                 </li>
-                <li class="p-feature__iconItem">
+                <li id="p-feature__iconItem03" class="p-feature__iconItem">
                   <div class="p-feature__icon">
                     <img src="/assets/images/feature_icon03.png" alt="">
                   </div>
