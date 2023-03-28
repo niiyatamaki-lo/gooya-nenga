@@ -1,15 +1,10 @@
 .p-detail {
-  // background: url(/assets/images/bg_white.png);
-  // background-size: cover;
-  // background-color: rgba(255, 255, 255, 0.7);
-  // background-blend-mode: lighten;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
-
-  // position: absolute;
-  // top: 0;
-  // left: 0;
-  // opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
   @include sp {
     margin: 0.88rem 0 0 0;

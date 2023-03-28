@@ -14,11 +14,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    // background-color: rgba(255, 255, 255, 0.7);
-    // background-blend-mode: lighten;
-    // background: url(/assets/images/bg_white.png);
-    // background-position: center;
-    // background-size: cover;
 
     @include sp {
       height: 100vh;
@@ -69,7 +64,6 @@
 
     @include sp {
       font-size: 0.18rem;
-      color: #fff;
       margin: 0.66rem 0 0 0;
       letter-spacing: .036rem;
       text-align: center;
@@ -84,7 +78,6 @@
     white-space: nowrap;
 
     @include sp {
-      color: #fff;
       font-size: .1rem;
       margin: 0.1rem 0 0 0;
       letter-spacing: .027rem;
@@ -157,7 +150,6 @@
     color: #fff;
 
     @include sp {
-      border: solid 1px #fff;
       padding: 0.135rem 0.35rem;
       color: #fff;
       font-size: .1rem;

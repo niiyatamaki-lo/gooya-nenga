@@ -220,7 +220,7 @@ console.log('top');$(function () {
       triggerElement: "#p-feature",
       triggerHook: 0,
       offset: 0,
-      duration: window.innerHeight*8,
+      duration: window.innerHeight*8.5,
       triggerHook: "onLeave",
     }).setPin("#p-feature").addTo(controller);
 
@@ -239,8 +239,8 @@ console.log('top');$(function () {
     new ScrollScene({
       triggerElement: "#p-feature",
       triggerHook: 0,
-      offset: window.innerHeight*2.5,
-      duration: window.innerHeight*1,
+      offset: window.innerHeight*2,
+      duration: window.innerHeight*1.5,
     }).on("progress", (prog) => {
       const p = prog.progress;
       $("#p-feature__iconItem01").css({
@@ -254,8 +254,8 @@ console.log('top');$(function () {
     new ScrollScene({
       triggerElement: "#p-feature",
       triggerHook: 0,
-      offset: window.innerHeight*2.9,
-      duration: window.innerHeight*1,
+      offset: window.innerHeight*2.7,
+      duration: window.innerHeight*1.5,
     }).on("progress", (prog) => {
       const p = prog.progress;
       $("#p-feature__iconItem02").css({
@@ -269,8 +269,8 @@ console.log('top');$(function () {
     new ScrollScene({
       triggerElement: "#p-feature",
       triggerHook: 0,
-      offset: window.innerHeight*3.3,
-      duration: window.innerHeight*1,
+      offset: window.innerHeight*3.4,
+      duration: window.innerHeight*1.5,
     }).on("progress", (prog) => {
       const p = prog.progress;
       $("#p-feature__iconItem03").css({
@@ -280,6 +280,167 @@ console.log('top');$(function () {
         transform: `translate(0, ${100 - p*100}px)`
       });
     }).addTo(controller);
+
+    new ScrollScene({
+      triggerElement: "#p-feature",
+      triggerHook: 0,
+      offset: window.innerHeight*6,
+      duration: window.innerHeight*1,
+    }).on("progress", (prog) => {
+      const p = prog.progress;
+      $("#p-feature__headArea").css({
+        opacity: 1 - (1 * p)
+      });
+      $("#p-feature__headArea").css({
+        transform: `translate(0, ${-p*30}px)`
+      });
+      $("#p-feature__iconItem01").css({
+        opacity: 1 - (1 * p)
+      });
+      $("#p-feature__iconItem01").css({
+        transform: `translate(0, ${-p*30}px)`
+      });
+      $("#p-feature__iconItem02").css({
+        opacity: 1 - (1 * p)
+      });
+      $("#p-feature__iconItem02").css({
+        transform: `translate(0, ${-p*30}px)`
+      });
+      $("#p-feature__iconItem03").css({
+        opacity: 1 - (1 * p)
+      });
+      $("#p-feature__iconItem03").css({
+        transform: `translate(0, ${-p*30}px)`
+      });
+    }).addTo(controller);
+
+    new ScrollScene({
+      triggerElement: "#p-feature",
+      triggerHook: 0,
+      offset: window.innerHeight*7.9,
+      duration: window.innerHeight*.8,
+    }).on("progress", (prog) => {
+      const p = prog.progress;
+      $("#bg-white").css({
+        opacity: (1 * p)
+      });
+      $("#bg-black").css({
+        opacity: 1 - (1 * p)
+      });
+    }).addTo(controller);
+
+
+    const pointImage01 = TweenMax.fromTo("#p-point__image01", .5, {
+      opacity: '0'
+    }, {
+      opacity: '1'
+    });
+    new ScrollScene({
+      triggerElement: "#p-point__image01",
+      triggerHook: 0.8,
+    }).setTween(pointImage01).addTo(controller);
+
+    const pointImage02 = TweenMax.fromTo("#p-point__image02", .5, {
+      opacity: '0'
+    }, {
+      opacity: '1'
+    });
+    new ScrollScene({
+      triggerElement: "#p-point__image02",
+      triggerHook: 0.8,
+    }).setTween(pointImage02).addTo(controller);
+
+    const pointImage03 = TweenMax.fromTo("#p-point__image03", .5, {
+      opacity: '0'
+    }, {
+      opacity: '1'
+    });
+    new ScrollScene({
+      triggerElement: "#p-point__image03",
+      triggerHook: 0.8,
+    }).setTween(pointImage03).addTo(controller);
+
+    const pointImage04 = TweenMax.fromTo("#p-point__image04", .5, {
+      opacity: '0'
+    }, {
+      opacity: '1'
+    });
+    new ScrollScene({
+      triggerElement: "#p-point__image04",
+      triggerHook: 0.8,
+    }).setTween(pointImage04).addTo(controller);
+
+    const pointFrame01 = TweenMax.fromTo("#p-point__frameInner01", .5, {
+      opacity: '0',
+      transform: 'translate(1rem, 0)'
+    }, {
+      opacity: '1',
+      transform: 'translate(0, 0)'
+    });
+    new ScrollScene({
+      triggerElement: "#p-point__frameInner01",
+      triggerHook: 0.8,
+    }).setTween(pointFrame01).addTo(controller);
+
+    const pointFrame02 = TweenMax.fromTo("#p-point__frameInner02", .5, {
+      opacity: '0',
+      transform: 'translate(-1rem, 0)'
+    }, {
+      opacity: '1',
+      transform: 'translate(0, 0)'
+    });
+    new ScrollScene({
+      triggerElement: "#p-point__frameInner02",
+      triggerHook: 0.8,
+    }).setTween(pointFrame02).addTo(controller);
+
+    const pointFrame03 = TweenMax.fromTo("#p-point__frameInner03", .5, {
+      opacity: '0',
+      transform: 'translate(1rem, 0)'
+    }, {
+      opacity: '1',
+      transform: 'translate(0, 0)'
+    });
+    new ScrollScene({
+      triggerElement: "#p-point__frameInner03",
+      triggerHook: 0.8,
+    }).setTween(pointFrame03).addTo(controller);
+
+    const pointFrame04 = TweenMax.fromTo("#p-point__frameInner04", .5, {
+      opacity: '0',
+      transform: 'translate(-1rem, 0)'
+    }, {
+      opacity: '1',
+      transform: 'translate(0, 0)'
+    });
+    new ScrollScene({
+      triggerElement: "#p-point__frameInner04",
+      triggerHook: 0.8,
+    }).setTween(pointFrame04).addTo(controller);
+
+    // const bgBlack = TweenMax.fromTo("#bg-black", .5, {
+    //   opacity: '1',
+    //   // transform: 'translate(0, 0)'
+    // }, {
+    //   opacity: '0',
+    //   // transform: 'translate(0, -1rem)'
+    // });
+    // new ScrollScene({
+    //   triggerElement: "#p-slider",
+    //   // triggerHook: 0.8,
+    // }).setTween(bgBlack).addTo(controller);
+
+    // const bgWhite = TweenMax.fromTo("#bg-white", .5, {
+    //   opacity: '1',
+    //   // transform: 'translate(0, 0)'
+    // }, {
+    //   opacity: '0',
+    //   // transform: 'translate(0, -1rem)'
+    // });
+    // new ScrollScene({
+    //   triggerElement: "#p-slider",
+    //   // triggerHook: 0.8,
+    // }).setTween(bgWhite).addTo(controller);
 
 
 
