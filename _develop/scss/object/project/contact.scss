@@ -1,8 +1,19 @@
 .p-contact {
+  @include sp {
+    padding: 0 0 0.5rem 0;
+    margin: 0.5rem 0 0 0;
+  }
+
   &__contents {
     width: 14rem;
     margin: 0.8rem auto 0;
     padding: 1.37rem 0 1.5rem 0;
+
+    @include sp {
+      width: 88%;
+      margin: 0 auto;
+      padding: 0.47rem 0 0 0;
+    }
   }
 
   &__head {
@@ -10,31 +21,68 @@
     font-size: .22rem;
     font-weight: 500;
     letter-spacing: .05rem;
+
+    @include sp {
+      color: #1F1816;
+      font-size: .12rem;
+      font-weight: 500;
+      letter-spacing: .022rem;
+    }
   }
 
   &__form {
     margin: 1.2rem 0 0 0;
+
+    @include sp {
+      margin: 0.6rem 0 0 0;
+    }
   }
 
   &__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include sp {
+      display: block;
+    }
   }
 
   &__label {
     font-size: .2rem;
     font-weight: 500;
 
+    @include sp {
+      font-size: .12rem;
+      font-weight: 500;
+      letter-spacing: .04rem;
+    }
+
     &--right {
       margin: 0 0 0 0.3rem;
+
+      @include sp {
+        margin: 0.3rem 0 0 0;
+        display: block;
+      }
     }
 
     &--textArea {
-      margin: 0.5rem 0 0 0;
-      display: block;
-      font-size: .2rem;
-      font-weight: 500;
+      margin: 0.5rem 0 0 0 !important;
+      display: block !important;
+      font-size: .2rem !important;
+      font-weight: 500 !important;
+
+      @include sp {
+        display: block !important;
+        margin: 0.2rem 0 0 0 !important;
+        width: 100% !important;
+        min-height: 1rem !important;
+        padding: 0 !important;
+        font-size: .12rem !important;
+        font-weight: 500 !important;
+        letter-spacing: .04rem !important;
+      }
     }
   }
 
@@ -43,6 +91,13 @@
     margin: 0.2rem 0 0 0 !important;
     width: 6.6rem !important;
     height: 0.6rem !important;
+
+    @include sp {
+      display: block !important;
+      margin: 0.15rem 0 0 0 !important;
+      width: 100% !important;
+      height: 0.4rem !important;
+    }
   }
 
   &__textArea {
@@ -50,7 +105,7 @@
     margin: 0.2rem 0 0 0 !important;
     width: 100% !important;
     min-height: 1rem !important;
-    padding: .15rem;
+    padding: .1rem;
   }
 
   &__submit {
@@ -59,12 +114,28 @@
     padding: 0.18rem 2rem;
     font-size: .2rem;
     margin: 0.6rem 0 0 0;
+
+    @include sp {
+      color: #fff;
+      background: #2C2C2C;
+      padding: 0.19rem 0;
+      font-size: .13rem;
+      margin: 0.4rem 0 0 0;
+      width: 100%;
+    }
   }
 
   &__link {
     margin: 0.4rem 0 0 0;
     font-size: .2rem;
-    text-decoration: underline;
+    text-decoration: underline !important;
     color: #4475F8;
+
+    @include sp {
+      margin: 0.3rem 0 0 0;
+      font-size: .13rem;
+      text-decoration: underline !important;
+      color: #4475F8;
+    }
   }
 }
