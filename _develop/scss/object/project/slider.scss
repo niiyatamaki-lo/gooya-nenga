@@ -151,9 +151,9 @@
       margin: 0 auto !important;
     }
 
-    & li:nth-of-type(2n - 1) {
+    & li:first-of-type {
       & .p-slider__image {
-        background: url(/assets/images/slider_item01.png);
+        background: url(/assets/images/slider_item01_a.png);
         background-position: center;
         background-size: contain;
         margin: 0 auto;
@@ -162,7 +162,7 @@
         height: 6.4rem;
 
         @include sp {
-          background: url(/assets/images/slider_item01.png);
+          background: url(/assets/images/slider_item01_a.png);
           background-position: center;
           background-size: contain;
           margin: 0 auto;
@@ -173,9 +173,9 @@
       }
     }
 
-    & li:nth-of-type(2n) {
+    & li:nth-of-type(2) {
       & .p-slider__image {
-        background: url(/assets/images/slider_item01.png);
+        background: url(/assets/images/slider_item02.png);
         background-position: center;
         background-size: contain;
         margin: 0 auto;
@@ -184,7 +184,7 @@
         height: 6.4rem;
 
         @include sp {
-          background: url(/assets/images/slider_item01.png);
+          background: url(/assets/images/slider_item02.png);
           background-position: center;
           background-size: contain;
           margin: 0 auto;
@@ -195,9 +195,9 @@
       }
     }
 
-    & li:nth-of-type(3n) {
+    & li:nth-of-type(3) {
       & .p-slider__image {
-        background: url(/assets/images/slider_item01.png);
+        background: url(/assets/images/slider_item03.png);
         background-position: center;
         background-size: contain;
         margin: 0 auto;
@@ -206,7 +206,29 @@
         height: 6.4rem;
 
         @include sp {
-          background: url(/assets/images/slider_item01.png);
+          background: url(/assets/images/slider_item03.png);
+          background-position: center;
+          background-size: contain;
+          margin: 0 auto;
+          background-repeat: no-repeat;
+          width: 1.5rem;
+          height: 2.6rem;
+        }
+      }
+    }
+
+    & li:nth-of-type(4) {
+      & .p-slider__image {
+        background: url(/assets/images/slider_item04.png);
+        background-position: center;
+        background-size: contain;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        width: 3.9rem;
+        height: 6.4rem;
+
+        @include sp {
+          background: url(/assets/images/slider_item04.png);
           background-position: center;
           background-size: contain;
           margin: 0 auto;
@@ -349,15 +371,13 @@
   }
 
   &__benchImage {
-    width: 0.65rem;
-    height: 0.65rem;
+    width: 0.6rem;
     margin: 0 0.3rem 0 0;
     overflow: hidden;
     cursor: pointer;
 
     @include sp {
-      width: 0.65rem;
-      height: 0.65rem;
+      width: 0.4rem;
       margin: 0 0.13rem;
       overflow: hidden;
       cursor: pointer;
