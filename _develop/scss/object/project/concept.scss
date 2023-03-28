@@ -1,12 +1,8 @@
 .p-concept {
-  // background: url(/assets/images/bg_black.png);
-  // background-size: cover;
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
-  // position: absolute;
-  // top: 0;
-  // left: 0;
-  // opacity: 0;
+  @include pc {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+  }
 
   &__image {
     position: absolute;

@@ -469,91 +469,99 @@ select::-ms-expand {
       .p-hero__itemView {
         display: none; } }
 
-.p-concept {
+@media screen and (min-width: 651px) {
+  .p-concept {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100); } }
+
+.p-concept__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5.7rem;
   height: 100vh;
-  height: calc(var(--vh, 1vh) * 100); }
-  .p-concept__image {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 5.7rem;
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
-    background: url(/assets/images/item03.png);
-    background-size: cover;
-    transform: translate(0, 100%); }
-    @media screen and (max-width: 650px) {
-      .p-concept__image {
-        display: none; } }
-  .p-concept__contents {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
-    position: relative; }
-    @media screen and (max-width: 650px) {
-      .p-concept__contents {
-        height: auto;
-        padding: 1.17rem 0.24rem 0; } }
-  .p-concept__inner {
-    width: 36%;
-    margin: auto;
-    transform: translate(-42%, 0);
-    opacity: 0; }
-    @media screen and (max-width: 650px) {
-      .p-concept__inner {
-        width: 100%;
-        margin: auto;
-        transform: none; } }
-  .p-concept__logo {
-    width: 1.35rem; }
-    @media screen and (max-width: 650px) {
-      .p-concept__logo {
-        width: 1rem; } }
-  .p-concept__head {
-    font-size: .26rem;
-    letter-spacing: .04rem;
-    margin: 0.12rem 0 0 0;
-    line-height: 1.5;
-    font-weight: 500;
-    color: #fff; }
-    @media screen and (max-width: 650px) {
-      .p-concept__head {
-        font-size: .19rem;
-        letter-spacing: .03rem;
-        margin: 0.09rem 0 0 0;
-        line-height: 1.5;
-        font-weight: 500; } }
-  .p-concept__textArea {
-    margin: 0.5rem 0 0 0;
-    transform: translate(0, 100px);
-    opacity: 0; }
-    @media screen and (max-width: 650px) {
-      .p-concept__textArea {
-        margin: 0.2rem 0 0 0; } }
-  .p-concept__text {
+  height: calc(var(--vh, 1vh) * 100);
+  background: url(/assets/images/item03.png);
+  background-size: cover;
+  transform: translate(0, 100%); }
+  @media screen and (max-width: 650px) {
+    .p-concept__image {
+      display: none; } }
+
+.p-concept__contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  position: relative; }
+  @media screen and (max-width: 650px) {
+    .p-concept__contents {
+      height: auto;
+      padding: 1.17rem 0.24rem 0; } }
+
+.p-concept__inner {
+  width: 36%;
+  margin: auto;
+  transform: translate(-42%, 0);
+  opacity: 0; }
+  @media screen and (max-width: 650px) {
+    .p-concept__inner {
+      width: 100%;
+      margin: auto;
+      transform: none; } }
+
+.p-concept__logo {
+  width: 1.35rem; }
+  @media screen and (max-width: 650px) {
+    .p-concept__logo {
+      width: 1rem; } }
+
+.p-concept__head {
+  font-size: .26rem;
+  letter-spacing: .04rem;
+  margin: 0.12rem 0 0 0;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #fff; }
+  @media screen and (max-width: 650px) {
+    .p-concept__head {
+      font-size: .19rem;
+      letter-spacing: .03rem;
+      margin: 0.09rem 0 0 0;
+      line-height: 1.5;
+      font-weight: 500; } }
+
+.p-concept__textArea {
+  margin: 0.5rem 0 0 0;
+  transform: translate(0, 100px);
+  opacity: 0; }
+  @media screen and (max-width: 650px) {
+    .p-concept__textArea {
+      margin: 0.2rem 0 0 0; } }
+
+.p-concept__text {
+  line-height: 1.9;
+  font-size: 0.2rem;
+  letter-spacing: .001rem;
+  color: #fff; }
+  @media screen and (max-width: 650px) {
+    .p-concept__text {
+      line-height: 2.05;
+      font-size: 0.14rem;
+      letter-spacing: .002rem; } }
+  .p-concept__text--under {
     line-height: 1.9;
     font-size: 0.2rem;
     letter-spacing: .001rem;
+    margin: 0.4rem 0 0 0;
     color: #fff; }
     @media screen and (max-width: 650px) {
-      .p-concept__text {
+      .p-concept__text--under {
         line-height: 2.05;
-        font-size: 0.14rem;
-        letter-spacing: .002rem; } }
-    .p-concept__text--under {
-      line-height: 1.9;
-      font-size: 0.2rem;
-      letter-spacing: .001rem;
-      margin: 0.4rem 0 0 0;
-      color: #fff; }
-      @media screen and (max-width: 650px) {
-        .p-concept__text--under {
-          line-height: 2.05;
-          font-size: 0.15rem;
-          letter-spacing: .002rem;
-          margin: 0.3rem 0 0 0; } }
+        font-size: 0.15rem;
+        letter-spacing: .002rem;
+        margin: 0.3rem 0 0 0; } }
 
 .p-detail {
   height: 100vh;
