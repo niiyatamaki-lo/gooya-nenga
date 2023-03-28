@@ -92,7 +92,7 @@ body {
 
 @media screen and (min-width: 1241px) {
   html {
-    font-size: calc(100px * 1); } }
+    font-size: calc(100px * .75); } }
 
 @media screen and (min-width: 651px) and (max-width: 1240px) {
   html {
@@ -1445,5 +1445,61 @@ select::-ms-expand {
         margin: 0.6rem 0 0 0;
         font-weight: 300;
         line-height: 1.5; } }
+
+.p-contact__contents {
+  width: 14rem;
+  margin: 0.8rem auto 0;
+  padding: 1.37rem 0 1.5rem 0; }
+
+.p-contact__head {
+  color: #1F1816;
+  font-size: .22rem;
+  font-weight: 500;
+  letter-spacing: .05rem; }
+
+.p-contact__form {
+  margin: 1.2rem 0 0 0; }
+
+.p-contact__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.p-contact__label {
+  font-size: .2rem;
+  font-weight: 500; }
+  .p-contact__label--right {
+    margin: 0 0 0 0.3rem; }
+  .p-contact__label--textArea {
+    margin: 0.5rem 0 0 0;
+    display: block;
+    font-size: .2rem;
+    font-weight: 500; }
+
+.p-contact__input {
+  display: block !important;
+  margin: 0.2rem 0 0 0 !important;
+  width: 6.6rem !important;
+  height: 0.6rem !important; }
+
+.p-contact__textArea {
+  display: block !important;
+  margin: 0.2rem 0 0 0 !important;
+  width: 100% !important;
+  min-height: 1rem !important;
+  padding: .15rem; }
+
+.p-contact__submit {
+  color: #fff;
+  background: #2C2C2C;
+  padding: 0.18rem 2rem;
+  font-size: .2rem;
+  margin: 0.6rem 0 0 0; }
+
+.p-contact__link {
+  margin: 0.4rem 0 0 0;
+  font-size: .2rem;
+  text-decoration: underline;
+  color: #4475F8; }
 
 /*-------------------------------------------*/
