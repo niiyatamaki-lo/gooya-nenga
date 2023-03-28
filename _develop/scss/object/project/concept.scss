@@ -1,12 +1,19 @@
 .p-concept {
-  position: relative;
+  position: absolute;
+  background: url(/assets/images/bg_black.png);
+  background-size: cover;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  top: 0;
+  left: 0;
 
   &__image {
     position: absolute;
     top: 0;
     right: 0;
     width: 5.7rem;
-    height: 10.8rem;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     background: url(/assets/images/item03.png);
     background-size: cover;
 
@@ -19,7 +26,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10.8rem;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    position: relative;
 
     @include sp {
       height: auto;
@@ -53,6 +62,7 @@
     margin: 0.12rem 0 0 0;
     line-height: 1.5;
     font-weight: 500;
+    color: #fff;
 
     @include sp {
       font-size: .19rem;
@@ -75,6 +85,7 @@
     line-height: 1.9;
     font-size: 0.2rem;
     letter-spacing: .001rem;
+    color: #fff;
 
     @include sp {
       line-height: 2.05;
@@ -87,6 +98,7 @@
       font-size: 0.2rem;
       letter-spacing: .001rem;
       margin: 0.4rem 0 0 0;
+      color: #fff;
 
       @include sp {
         line-height: 2.05;

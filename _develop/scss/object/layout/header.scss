@@ -1,6 +1,6 @@
 .l-header {
   &__contents {
-    background: #2C2C2C;
+    background: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,9 +54,10 @@
   }
 
   &__link {
-    color: #fff;
     font-size: .18rem;
     transition: all .1s 0s linear;
+    color: #1c1c1c;
+    font-weight: 500;
 
     &:hover {
       text-decoration: underline !important;

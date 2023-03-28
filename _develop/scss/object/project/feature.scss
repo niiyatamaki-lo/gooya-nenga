@@ -1,7 +1,24 @@
 .p-feature {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: url(/assets/images/bg_black.png);
+  background-size: cover;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
   &__contents {
-    background: url(/assets/images/feature_bg.png);
-    background-size: cover;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
     @include sp {
       background: #2C2C2C;
@@ -91,7 +108,6 @@
   &__inner {
     width: 15.8rem;
     margin: 0 auto;
-    padding: 1.57rem 0 1rem;
 
     @include sp {
       width: 100%;
