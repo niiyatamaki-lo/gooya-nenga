@@ -55,3 +55,12 @@
     }
   }
 }
+
+.is-fade {
+  opacity: 1 !important;
+}
+
+.is-fade__bottom {
+  transform: translate(0, 0) !important;
+  opacity: 1 !important;
+}

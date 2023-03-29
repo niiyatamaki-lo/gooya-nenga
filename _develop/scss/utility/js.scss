@@ -1,0 +1,16 @@
+.js {
+  &-fade {
+    @include sp {
+      opacity: 0;
+      transition: all .5s 0s cubic-bezier(0.82, 0.01, 0.17, 0.99);
+    }
+  }
+
+  &-fade__bottom {
+    @include sp {
+      transform: translate(0, 30px);
+      opacity: 0;
+      transition: all .5s 0s cubic-bezier(0.82, 0.01, 0.17, 0.99);
+    }
+  }
+}

@@ -4,6 +4,11 @@
     height: calc(var(--vh, 1vh) * 100);
   }
 
+  @include sp {
+    background: url(/assets/images/bg_black.png);
+    background-size: cover;
+  }
+
   &__image {
     position: absolute;
     top: 0;
@@ -30,7 +35,7 @@
 
     @include sp {
       height: auto;
-      padding: 1.17rem 0.24rem 0;
+      padding: 1.17rem 0.24rem;
     }
   }
 
@@ -38,7 +43,10 @@
     width: 36%;
     margin: auto;
     transform: translate(-42%, 0);
-    opacity: 0;
+
+    @include pc {
+      opacity: 0;
+    }
 
     @include sp {
       width: 100%;
@@ -74,8 +82,11 @@
 
   &__textArea {
     margin: 0.5rem 0 0 0;
-    transform: translate(0, 100px);
-    opacity: 0;
+
+    @include pc {
+      opacity: 0;
+      transform: translate(0, 100px);
+    }
 
     @include sp {
       margin: 0.2rem 0 0 0;

@@ -1,8 +1,38 @@
-console.log('top');$(function () {
+console.log('top');
+$(function () {
   const isSp = window.innerWidth <= 650 ? true : false;
-  // const isSp = false;
 
   // 全体のアニメーション構成に影響範囲が大きいため、pc,spで完全に切り分ける
+  if (isSp) {
+    /**
+     * curtain effect
+     */
+    function activeAnimate() {
+      $('.js-fade, .js-fade__bottom').each(function () {
+        const scrollTop = $(window).scrollTop();
+        const triggerTop = $(this).offset().top;
+        const windowHeight = $(window).height();
+
+        if ($(this).hasClass('js-fade')) {
+          if (scrollTop > triggerTop - windowHeight / 1.3) {
+            $(this).addClass('is-fade');
+          } else {
+            $(this).removeClass('is-fade');
+          }
+        }
+
+        if ($(this).hasClass('js-fade__bottom')) {
+          if (scrollTop > triggerTop - windowHeight / 1.3) {
+            $(this).addClass('is-fade__bottom');
+          } else {
+            $(this).removeClass('is-fade__bottom');
+          }
+        }
+      });
+    }
+    $(window).on('scroll', activeAnimate);
+  }
+
   if (!isSp) {
     const controller = new ScrollMagic();
 
@@ -10,7 +40,7 @@ console.log('top');$(function () {
       triggerElement: "#l-wrap",
       triggerHook: 0,
       offset: 0,
-      duration: window.innerHeight*1,
+      duration: window.innerHeight * 1,
       triggerHook: "onLeave",
     }).setPin("#p-hero").addTo(controller);
 
@@ -18,7 +48,7 @@ console.log('top');$(function () {
       triggerElement: "#l-wrap",
       triggerHook: 0,
       offset: 0,
-      duration: window.innerHeight*.3,
+      duration: window.innerHeight * .3,
     }).on("progress", (prog) => {
       const p = prog.progress;
       $("#p-hero").css({
@@ -32,7 +62,7 @@ console.log('top');$(function () {
     new ScrollScene({
       triggerElement: "#l-wrap",
       triggerHook: 0,
-      offset: window.innerHeight*.4,
+      offset: window.innerHeight * .4,
       duration: window.innerHeight,
     }).on("progress", (prog) => {
       const p = prog.progress;
@@ -45,7 +75,7 @@ console.log('top');$(function () {
       triggerElement: "#p-concept",
       triggerHook: 0,
       offset: 0,
-      duration: window.innerHeight*7.5,
+      duration: window.innerHeight * 7.5,
       triggerHook: "onLeave",
     }).setPin("#p-concept").addTo(controller);
 
@@ -53,7 +83,7 @@ console.log('top');$(function () {
       triggerElement: "#p-concept",
       triggerHook: 0,
       offset: 0,
-      duration: window.innerHeight*1,
+      duration: window.innerHeight * 1,
     }).on("progress", (prog) => {
       const p = prog.progress;
       $("#p-concept__inner").css({
@@ -64,8 +94,8 @@ console.log('top');$(function () {
     new ScrollScene({
       triggerElement: "#p-concept",
       triggerHook: 0,
-      offset: window.innerHeight*.9,
-      duration: window.innerHeight*1,
+      offset: window.innerHeight * .9,
+      duration: window.innerHeight * 1,
     }).on("progress", (prog) => {
       const p = prog.progress;
       $("#p-concept__textArea").css({
@@ -79,8 +109,8 @@ console.log('top');$(function () {
     new ScrollScene({
       triggerElement: "#p-concept",
       triggerHook: 0,
-      offset: window.innerHeight*.9,
-      duration: window.innerHeight*1,
+      offset: window.innerHeight * .9,
+      duration: window.innerHeight * 1,
     }).on("progress", (prog) => {
       const p = prog.progress;
       $("#p-concept__image").css({
@@ -91,8 +121,8 @@ console.log('top');$(function () {
     new ScrollScene({
       triggerElement: "#p-concept",
       triggerHook: 0,
-      offset: window.innerHeight*3.3,
-      duration: window.innerHeight*.8,
+      offset: window.innerHeight * 3.3,
+      duration: window.innerHeight * .8,
     }).on("progress", (prog) => {
       const p = prog.progress;
       $("#p-concept__inner").css({
@@ -103,8 +133,8 @@ console.log('top');$(function () {
     new ScrollScene({
       triggerElement: "#p-concept",
       triggerHook: 0,
-      offset: window.innerHeight*4.5,
-      duration: window.innerHeight*.5,
+      offset: window.innerHeight * 4.5,
+      duration: window.innerHeight * .5,
     }).on("progress", (prog) => {
       const p = prog.progress;
       $("#bg-white").css({
@@ -118,8 +148,8 @@ console.log('top');$(function () {
     new ScrollScene({
       triggerElement: "#p-concept",
       triggerHook: 0,
-      offset: window.innerHeight*6.5,
-      duration: window.innerHeight*.8,
+      offset: window.innerHeight * 6.5,
+      duration: window.innerHeight * .8,
     }).on("progress", (prog) => {
       const p = prog.progress;
       $("#p-concept__image").css({
@@ -131,7 +161,7 @@ console.log('top');$(function () {
       triggerElement: "#p-detail",
       triggerHook: 0,
       offset: 0,
-      duration: window.innerHeight*5,
+      duration: window.innerHeight * 5,
       triggerHook: "onLeave",
     }).setPin("#p-detail").addTo(controller);
 
@@ -139,7 +169,7 @@ console.log('top');$(function () {
       triggerElement: "#p-detail",
       triggerHook: 0,
       offset: 0,
-      duration: window.innerHeight*.6,
+      duration: window.innerHeight * .6,
     }).on("progress", (prog) => {
       const p = prog.progress;
       $("#p-detail__item01").css({
@@ -154,7 +184,7 @@ console.log('top');$(function () {
       triggerElement: "#p-detail",
       triggerHook: 0,
       offset: window.innerHeight,
-      duration: window.innerHeight*1,
+      duration: window.innerHeight * 1,
     }).on("progress", (prog) => {
       const p = prog.progress;
       $("#p-detail__head01").css({
@@ -198,8 +228,8 @@ console.log('top');$(function () {
     new ScrollScene({
       triggerElement: "#p-detail",
       triggerHook: 0,
-      offset: window.innerHeight*4,
-      duration: window.innerHeight*1,
+      offset: window.innerHeight * 4,
+      duration: window.innerHeight * 1,
     }).on("progress", (prog) => {
       const p = prog.progress;
       $("#bg-white").css({
@@ -220,7 +250,7 @@ console.log('top');$(function () {
       triggerElement: "#p-feature",
       triggerHook: 0,
       offset: 0,
-      duration: window.innerHeight*8.5,
+      duration: window.innerHeight * 8.5,
       triggerHook: "onLeave",
     }).setPin("#p-feature").addTo(controller);
 
@@ -228,7 +258,7 @@ console.log('top');$(function () {
       triggerElement: "#p-feature",
       triggerHook: 0,
       offset: 0,
-      duration: window.innerHeight*.9,
+      duration: window.innerHeight * .9,
     }).on("progress", (prog) => {
       const p = prog.progress;
       $("#p-feature__headArea").css({
@@ -239,8 +269,8 @@ console.log('top');$(function () {
     new ScrollScene({
       triggerElement: "#p-feature",
       triggerHook: 0,
-      offset: window.innerHeight*2,
-      duration: window.innerHeight*1.5,
+      offset: window.innerHeight * 2,
+      duration: window.innerHeight * 1.5,
     }).on("progress", (prog) => {
       const p = prog.progress;
       $("#p-feature__iconItem01").css({
@@ -254,8 +284,8 @@ console.log('top');$(function () {
     new ScrollScene({
       triggerElement: "#p-feature",
       triggerHook: 0,
-      offset: window.innerHeight*2.7,
-      duration: window.innerHeight*1.5,
+      offset: window.innerHeight * 2.7,
+      duration: window.innerHeight * 1.5,
     }).on("progress", (prog) => {
       const p = prog.progress;
       $("#p-feature__iconItem02").css({
@@ -269,8 +299,8 @@ console.log('top');$(function () {
     new ScrollScene({
       triggerElement: "#p-feature",
       triggerHook: 0,
-      offset: window.innerHeight*3.4,
-      duration: window.innerHeight*1.5,
+      offset: window.innerHeight * 3.4,
+      duration: window.innerHeight * 1.5,
     }).on("progress", (prog) => {
       const p = prog.progress;
       $("#p-feature__iconItem03").css({
@@ -284,8 +314,8 @@ console.log('top');$(function () {
     new ScrollScene({
       triggerElement: "#p-feature",
       triggerHook: 0,
-      offset: window.innerHeight*6,
-      duration: window.innerHeight*1,
+      offset: window.innerHeight * 6,
+      duration: window.innerHeight * 1,
     }).on("progress", (prog) => {
       const p = prog.progress;
       $("#p-feature__headArea").css({
@@ -317,8 +347,8 @@ console.log('top');$(function () {
     new ScrollScene({
       triggerElement: "#p-feature",
       triggerHook: 0,
-      offset: window.innerHeight*7.9,
-      duration: window.innerHeight*.8,
+      offset: window.innerHeight * 7.9,
+      duration: window.innerHeight * .8,
     }).on("progress", (prog) => {
       const p = prog.progress;
       $("#bg-white").css({

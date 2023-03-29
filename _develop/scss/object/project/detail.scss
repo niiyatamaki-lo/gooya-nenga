@@ -7,7 +7,14 @@
   flex-direction: column;
 
   @include sp {
-    margin: 0.88rem 0 0 0;
+    margin: 0;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.7) !important;
+    background-blend-mode: lighten;
+    background: url(/assets/images/bg_white.png);
+    background-position: center;
+    background-size: cover;
+    padding: 0 0 1rem 0;
   }
 
   &__contents {
@@ -110,7 +117,7 @@
 
       & .p-detail__inner {
         @include sp {
-          overflow-x: hidden;
+          // overflow-x: hidden;
         }
       }
 
@@ -134,7 +141,10 @@
     padding: 1rem 0 0.9rem;
     position: relative;
     overflow: hidden;
-    opacity: 0;
+
+    @include pc {
+      opacity: 0;
+    }
 
     @include sp {
       width: 100%;
@@ -163,7 +173,10 @@
     letter-spacing: .06rem;
     font-weight: 500;
     transform: translate(0 100px);
-    opacity: 0;
+
+    @include pc {
+      opacity: 0;
+    }
 
     @include sp {
       text-align: center;
@@ -181,7 +194,10 @@
     font-weight: 500;
     letter-spacing: .045rem;
     transform: translate(0 100px);
-    opacity: 0;
+
+    @include pc {
+      opacity: 0;
+    }
 
     @include sp {
       font-size: .145rem;
@@ -199,7 +215,10 @@
     width: 4.7rem;
     position: relative;
     transform: translate(0 100px);
-    opacity: 0;
+
+    @include pc {
+      opacity: 0;
+    }
 
     @include sp {
       font-size: 0.13rem;
