@@ -1,4 +1,3 @@
-console.log('top');
 $(function () {
   const isSp = window.innerWidth <= 650 ? true : false;
 

@@ -470,7 +470,7 @@ select::-ms-expand {
       letter-spacing: 0.02rem; }
   .p-hero__button {
     border: solid 1px #1c1c1c;
-    padding: 0.15rem 0.25rem;
+    padding: 0.2rem 0.25rem;
     font-size: .155rem;
     margin: 0.3rem 0 0 0;
     transition: all .15s 0s linear;
@@ -478,12 +478,13 @@ select::-ms-expand {
     color: #fff; }
     @media screen and (max-width: 650px) {
       .p-hero__button {
-        padding: 0.135rem 0.35rem;
+        padding: 0.16rem 0.3rem;
         color: #fff;
         font-size: .1rem;
         margin: 0.38rem auto 0;
-        display: block;
-        transition: all .15s 0s linear; } }
+        display: block !important;
+        transition: all .15s 0s linear;
+        width: 2rem; } }
     .p-hero__button:hover {
       background: rgba(255, 255, 255, 0.2) !important;
       color: #1C1C1C !important;
@@ -492,8 +493,7 @@ select::-ms-expand {
     width: 8rem;
     position: absolute;
     left: 50%;
-    transform: translate(calc(-50% + 4.2rem), 0);
-    top: 2.8rem; }
+    bottom: 0; }
     @media screen and (max-width: 650px) {
       .p-hero__itemView {
         display: none; } }

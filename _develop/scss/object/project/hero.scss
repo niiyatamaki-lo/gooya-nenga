@@ -147,7 +147,7 @@
 
   &__button {
     border: solid 1px #1c1c1c;
-    padding: 0.15rem 0.25rem;
+    padding: 0.2rem 0.25rem;
     font-size: .155rem;
     margin: 0.3rem 0 0 0;
     transition: all .15s 0s linear;
@@ -155,12 +155,13 @@
     color: #fff;
 
     @include sp {
-      padding: 0.135rem 0.35rem;
+      padding: 0.16rem 0.3rem;
       color: #fff;
       font-size: .1rem;
       margin: 0.38rem auto 0;
-      display: block;
+      display: block !important;
       transition: all .15s 0s linear;
+      width: 2rem;
     }
 
     &:hover {
@@ -174,8 +175,7 @@
     width: 8rem;
     position: absolute;
     left: 50%;
-    transform: translate(calc(-50% + 4.2rem), 0);
-    top: 2.8rem;
+    bottom: 0;
 
     @include sp {
       display: none;
