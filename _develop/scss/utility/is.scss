@@ -64,3 +64,8 @@
   transform: translate(0, 0) !important;
   opacity: 1 !important;
 }
+
+.is-open {
+  pointer-events: auto !important;
+  opacity: 1 !important;
+}

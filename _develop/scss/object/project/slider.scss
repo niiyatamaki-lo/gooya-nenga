@@ -390,18 +390,22 @@
     font-size: .14rem;
     letter-spacing: .02rem;
     border: solid #fff 1px;
-    padding: 0.15rem;
+    padding: 0.2rem 0;
     margin: 0.5rem 0 0 0;
     transition: all .15s 0s linear;
+    text-align: center;
+    width: 3rem;
 
     @include sp {
       color: #fff;
       font-size: .134rem;
       letter-spacing: .02rem;
       border: solid #fff 1px;
-      padding: 0.15rem;
+      padding: 0.18rem 0;
       margin: 0.57rem 0 0 0;
       transition: all .15s 0s linear;
+      width: 2.5rem;
+      text-align: center;
     }
 
     &:hover {
