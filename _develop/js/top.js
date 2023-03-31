@@ -1,7 +1,7 @@
 $(function () {
   const location = window.location.pathname;
 
-  if ((location == '/index.html') || (location == '/index.html/')) {
+  if ((location == '/') || (location == '/index.html') || (location == '/index.html/')) {
     const isSp = window.innerWidth <= 650 ? true : false;
 
     // 全体のアニメーション構成に影響範囲が大きいため、pc,spで完全に切り分ける
