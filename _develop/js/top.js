@@ -59,6 +59,9 @@ $(function () {
         $("#bg-white").css({
           opacity: 1 - (1 * p)
         });
+        $("#l-header__contents").css({
+          background: `rgba(255, 255, 255, ${(1 * p)})`
+        });
       }).addTo(controller);
 
       new ScrollScene({
@@ -80,6 +83,7 @@ $(function () {
         duration: window.innerHeight * 7.5,
         triggerHook: "onLeave",
       }).setPin("#p-concept").addTo(controller);
+
 
       new ScrollScene({
         triggerElement: "#p-concept",

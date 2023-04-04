@@ -1,5 +1,5 @@
 .p-hero {
-  margin: 0.8rem 0 0 0;
+  margin: 0;
   position: relative;
 
   @include sp {
@@ -13,8 +13,7 @@
 
   &__contents {
     width: 100%;
-    height: calc(100vh - 0.8rem);
-    height: calc((calc(var(--vh, 1vh) * 100)) - 0.8rem);
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;

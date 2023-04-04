@@ -227,10 +227,9 @@ select::-ms-expand {
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: calc(100vh - 0.5rem);
-    height: calc((calc(var(--vh, 1vh) * 100)) - 0.5rem);
+    height: 100vh;
     position: fixed;
-    top: .5rem;
+    top: 0;
     left: 0;
     opacity: 1; }
     @media screen and (max-width: 650px) {
@@ -240,10 +239,9 @@ select::-ms-expand {
     background: url(/assets/images/bg_black.png);
     background-size: cover;
     width: 100%;
-    height: calc(100vh - 0.5rem);
-    height: calc((calc(var(--vh, 1vh) * 100)) - 0.5rem);
+    height: 100vh;
     position: fixed;
-    top: .5rem;
+    top: 0;
     left: 0;
     opacity: 0; }
     @media screen and (max-width: 650px) {
@@ -251,7 +249,7 @@ select::-ms-expand {
         height: 100vh !important; } }
 
 .l-header__contents {
-  background: #fff;
+  background: rgba(255, 255, 255, 0);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -461,7 +459,7 @@ select::-ms-expand {
 /*-------------------------------------------*/
 /*project------------------------------------*/
 .p-hero {
-  margin: 0.8rem 0 0 0;
+  margin: 0;
   position: relative; }
   @media screen and (max-width: 650px) {
     .p-hero {
@@ -473,8 +471,7 @@ select::-ms-expand {
       background-size: cover; } }
   .p-hero__contents {
     width: 100%;
-    height: calc(100vh - 0.8rem);
-    height: calc((calc(var(--vh, 1vh) * 100)) - 0.8rem);
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;

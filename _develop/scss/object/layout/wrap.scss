@@ -20,10 +20,9 @@
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: calc(100vh - 0.5rem);
-    height: calc((calc(var(--vh, 1vh) * 100)) - 0.5rem);
+    height: 100vh;
     position: fixed;
-    top: .5rem;
+    top: 0;
     left: 0;
     opacity: 1;
 
@@ -37,10 +36,9 @@
     background: url(/assets/images/bg_black.png);
     background-size: cover;
     width: 100%;
-    height: calc(100vh - 0.5rem);
-    height: calc((calc(var(--vh, 1vh) * 100)) - 0.5rem);
+    height: 100vh;
     position: fixed;
-    top: .5rem;
+    top: 0;
     left: 0;
     opacity: 0;
 
