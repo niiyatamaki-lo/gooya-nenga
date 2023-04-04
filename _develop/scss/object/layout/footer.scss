@@ -59,7 +59,7 @@
   }
 
   &__wave {
-    width: 11.9rem;
+    width: 8.5rem;
 
     @include sp {
       display: none;
@@ -68,7 +68,7 @@
 
   &__copyright {
     text-align: center;
-    margin: 4.4rem 0 0 0;
+    margin: 0;
     font-size: .15rem;
     padding: 0 0 0.3rem 0;
 

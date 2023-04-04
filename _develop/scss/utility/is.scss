@@ -69,3 +69,16 @@
   pointer-events: auto !important;
   opacity: 1 !important;
 }
+
+.is-bgWhite {
+  background: #fff !important;
+}
+
+.is-dlButton {
+  color: #fff !important;
+  background: #2c2c2c;
+  padding: 0.2rem 0.4rem;
+  font-weight: 300;
+  border-radius: 0.06rem;
+  cursor: pointer;
+}

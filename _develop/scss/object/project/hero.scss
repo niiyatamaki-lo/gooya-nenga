@@ -1,9 +1,7 @@
 .p-hero {
-  margin: 0;
   position: relative;
 
   @include sp {
-    margin: 0.5rem 0 0 0;
     background-color: rgba(255, 255, 255, 0.7) !important;
     background-blend-mode: lighten;
     background: url(/assets/images/bg_white.png);
@@ -22,6 +20,11 @@
     @include sp {
       height: 100vh;
       height: calc(var(--vh, 1vh) * 100);
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-direction: column;
     }
   }
 
@@ -34,6 +37,7 @@
 
     @include sp {
       width: 100%;
+      display: block;
     }
   }
 
@@ -161,6 +165,8 @@
       display: block !important;
       transition: all .15s 0s linear;
       width: 2rem;
+      background: #fff;
+      color: #2c2c2c;
     }
 
     &:hover {
@@ -177,7 +183,13 @@
     bottom: 0;
 
     @include sp {
-      display: none;
+      position: relative;
+      left: 50%;
+      bottom: auto;
+      width: 3rem;
+      transform: translate(-50%, 0);
+      margin: 0.5rem 0 0 0;
+      max-width: 350px;
     }
   }
 }
