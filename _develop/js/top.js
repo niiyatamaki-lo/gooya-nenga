@@ -3,6 +3,7 @@ $(function () {
 
   if ((location == '/') || (location == '/index.html') || (location == '/index.html/')) {
     const isSp = window.innerWidth <= 650 ? true : false;
+    const controller = new ScrollMagic();
 
     // 全体のアニメーション構成に影響範囲が大きいため、pc,spで完全に切り分ける
     if (isSp) {
@@ -33,11 +34,21 @@ $(function () {
         });
       }
       $(window).on('scroll', activeAnimate);
+
+      new ScrollScene({
+        triggerElement: "#l-wrap",
+        triggerHook: 0,
+        offset: 0,
+        duration: window.innerHeight * .3,
+      }).on("progress", (prog) => {
+        const p = prog.progress;
+        $("#l-header__contents").css({
+          background: `rgba(255, 255, 255, ${(1 * p)})`
+        });
+      }).addTo(controller);
     }
 
     if (!isSp) {
-      const controller = new ScrollMagic();
-
       new ScrollScene({
         triggerElement: "#l-wrap",
         triggerHook: 0,
