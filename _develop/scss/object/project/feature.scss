@@ -33,7 +33,7 @@
     position: relative;
 
     @include pc {
-      opacity: 0;
+      opacity: 1;
     }
 
     @include sp {
@@ -179,7 +179,7 @@
     position: relative;
 
     @include pc {
-      opacity: 0;
+      opacity: 1;
       transform: translate(0, 100px);
     }
 

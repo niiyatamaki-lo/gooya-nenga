@@ -143,7 +143,7 @@
     overflow: hidden;
 
     @include pc {
-      opacity: 0;
+      opacity: 1;
     }
 
     @include sp {
@@ -175,7 +175,7 @@
     transform: translate(0 100px);
 
     @include pc {
-      opacity: 0;
+      opacity: 1;
     }
 
     @include sp {
@@ -196,7 +196,7 @@
     transform: translate(0 100px);
 
     @include pc {
-      opacity: 0;
+      opacity: 1;
     }
 
     @include sp {
@@ -217,7 +217,7 @@
     transform: translate(0 100px);
 
     @include pc {
-      opacity: 0;
+      opacity: 1;
     }
 
     @include sp {

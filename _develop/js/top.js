@@ -80,7 +80,7 @@ $(function () {
         triggerElement: "#p-concept",
         triggerHook: 0,
         offset: 0,
-        duration: window.innerHeight * 7.5,
+        duration: window.innerHeight * 4.5,
         triggerHook: "onLeave",
       }).setPin("#p-concept").addTo(controller);
 
@@ -124,17 +124,17 @@ $(function () {
         });
       }).addTo(controller);
 
-      new ScrollScene({
-        triggerElement: "#p-concept",
-        triggerHook: 0,
-        offset: window.innerHeight * 3.3,
-        duration: window.innerHeight * .8,
-      }).on("progress", (prog) => {
-        const p = prog.progress;
-        $("#p-concept__inner").css({
-          opacity: 1 - (1 * p)
-        });
-      }).addTo(controller);
+      // new ScrollScene({
+      //   triggerElement: "#p-concept",
+      //   triggerHook: 0,
+      //   offset: window.innerHeight * 3.3,
+      //   duration: window.innerHeight * .8,
+      // }).on("progress", (prog) => {
+      //   const p = prog.progress;
+      //   $("#p-concept__inner").css({
+      //     opacity: 1 - (1 * p)
+      //   });
+      // }).addTo(controller);
 
       new ScrollScene({
         triggerElement: "#p-concept",
@@ -151,91 +151,97 @@ $(function () {
         });
       }).addTo(controller);
 
-      new ScrollScene({
-        triggerElement: "#p-concept",
-        triggerHook: 0,
-        offset: window.innerHeight * 6.5,
-        duration: window.innerHeight * .8,
-      }).on("progress", (prog) => {
-        const p = prog.progress;
-        $("#p-concept__image").css({
-          opacity: 1 - (1 * p)
-        });
-      }).addTo(controller);
+      // new ScrollScene({
+      //   triggerElement: "#p-concept",
+      //   triggerHook: 0,
+      //   offset: window.innerHeight * 6.5,
+      //   duration: window.innerHeight * .8,
+      // }).on("progress", (prog) => {
+      //   const p = prog.progress;
+      //   $("#p-concept__image").css({
+      //     opacity: 1 - (1 * p)
+      //   });
+      // }).addTo(controller);
+
+
+
+
+
+
+
+
+      // new ScrollScene({
+      //   triggerElement: "#p-detail",
+      //   triggerHook: 0,
+      //   offset: 0,
+      //   duration: window.innerHeight * 5,
+      //   triggerHook: "onLeave",
+      // }).setPin("#p-detail").addTo(controller);
+
+      // new ScrollScene({
+      //   triggerElement: "#p-detail",
+      //   triggerHook: 0,
+      //   offset: 0,
+      //   duration: window.innerHeight * .6,
+      // }).on("progress", (prog) => {
+      //   const p = prog.progress;
+      //   $("#p-detail__item01").css({
+      //     opacity: (1 * p)
+      //   });
+      //   $("#p-detail__item02").css({
+      //     opacity: (1 * p)
+      //   });
+      // }).addTo(controller);
+
+      // new ScrollScene({
+      //   triggerElement: "#p-detail",
+      //   triggerHook: 0,
+      //   offset: window.innerHeight,
+      //   duration: window.innerHeight * 1,
+      // }).on("progress", (prog) => {
+      //   const p = prog.progress;
+      //   $("#p-detail__head01").css({
+      //     opacity: (1 * p)
+      //   });
+      //   $("#p-detail__wat01").css({
+      //     opacity: (1 * p)
+      //   });
+      //   $("#p-detail__text01").css({
+      //     opacity: (1 * p)
+      //   });
+      //   $("#p-detail__head01").css({
+      //     transform: `translate(0, ${100 - p*100}px)`
+      //   });
+      //   $("#p-detail__wat01").css({
+      //     transform: `translate(0, ${100 - p*100}px)`
+      //   });
+      //   $("#p-detail__text01").css({
+      //     transform: `translate(0, ${100 - p*100}px)`
+      //   });
+      //   $("#p-detail__head02").css({
+      //     opacity: (1 * p)
+      //   });
+      //   $("#p-detail__wat02").css({
+      //     opacity: (1 * p)
+      //   });
+      //   $("#p-detail__text02").css({
+      //     opacity: (1 * p)
+      //   });
+      //   $("#p-detail__head02").css({
+      //     transform: `translate(0, ${100 - p*100}px)`
+      //   });
+      //   $("#p-detail__wat02").css({
+      //     transform: `translate(0, ${100 - p*100}px)`
+      //   });
+      //   $("#p-detail__text02").css({
+      //     transform: `translate(0, ${100 - p*100}px)`
+      //   });
+      // }).addTo(controller);
 
       new ScrollScene({
-        triggerElement: "#p-detail",
-        triggerHook: 0,
-        offset: 0,
-        duration: window.innerHeight * 5,
-        triggerHook: "onLeave",
-      }).setPin("#p-detail").addTo(controller);
-
-      new ScrollScene({
-        triggerElement: "#p-detail",
-        triggerHook: 0,
-        offset: 0,
-        duration: window.innerHeight * .6,
-      }).on("progress", (prog) => {
-        const p = prog.progress;
-        $("#p-detail__item01").css({
-          opacity: (1 * p)
-        });
-        $("#p-detail__item02").css({
-          opacity: (1 * p)
-        });
-      }).addTo(controller);
-
-      new ScrollScene({
-        triggerElement: "#p-detail",
-        triggerHook: 0,
-        offset: window.innerHeight,
-        duration: window.innerHeight * 1,
-      }).on("progress", (prog) => {
-        const p = prog.progress;
-        $("#p-detail__head01").css({
-          opacity: (1 * p)
-        });
-        $("#p-detail__wat01").css({
-          opacity: (1 * p)
-        });
-        $("#p-detail__text01").css({
-          opacity: (1 * p)
-        });
-        $("#p-detail__head01").css({
-          transform: `translate(0, ${100 - p*100}px)`
-        });
-        $("#p-detail__wat01").css({
-          transform: `translate(0, ${100 - p*100}px)`
-        });
-        $("#p-detail__text01").css({
-          transform: `translate(0, ${100 - p*100}px)`
-        });
-        $("#p-detail__head02").css({
-          opacity: (1 * p)
-        });
-        $("#p-detail__wat02").css({
-          opacity: (1 * p)
-        });
-        $("#p-detail__text02").css({
-          opacity: (1 * p)
-        });
-        $("#p-detail__head02").css({
-          transform: `translate(0, ${100 - p*100}px)`
-        });
-        $("#p-detail__wat02").css({
-          transform: `translate(0, ${100 - p*100}px)`
-        });
-        $("#p-detail__text02").css({
-          transform: `translate(0, ${100 - p*100}px)`
-        });
-      }).addTo(controller);
-
-      new ScrollScene({
-        triggerElement: "#p-detail",
-        triggerHook: 0,
-        offset: window.innerHeight * 4,
-        duration: window.innerHeight * 1,
+        triggerElement: "#p-feature",
+        triggerHook: .8,
+        duration: window.innerHeight * .4,
       }).on("progress", (prog) => {
         const p = prog.progress;
         $("#bg-white").css({
@@ -244,117 +250,131 @@ $(function () {
         $("#bg-black").css({
           opacity: (1 * p)
         });
-        $("#p-detail__item01").css({
-          opacity: 1 - (1 * p)
-        });
-        $("#p-detail__item02").css({
-          opacity: 1 - (1 * p)
-        });
+        // $("#p-detail__item01").css({
+        //   opacity: 1 - (1 * p)
+        // });
+        // $("#p-detail__item02").css({
+        //   opacity: 1 - (1 * p)
+        // });
       }).addTo(controller);
 
-      new ScrollScene({
-        triggerElement: "#p-feature",
-        triggerHook: 0,
-        offset: 0,
-        duration: window.innerHeight * 8.5,
-        triggerHook: "onLeave",
-      }).setPin("#p-feature").addTo(controller);
+      // new ScrollScene({
+      //   triggerElement: "#p-feature",
+      //   triggerHook: 0,
+      //   offset: 0,
+      //   duration: window.innerHeight * 8.5,
+      //   triggerHook: "onLeave",
+      // }).setPin("#p-feature").addTo(controller);
+
+      // new ScrollScene({
+      //   triggerElement: "#p-feature",
+      //   triggerHook: 0,
+      //   offset: 0,
+      //   duration: window.innerHeight * .9,
+      // }).on("progress", (prog) => {
+      //   const p = prog.progress;
+      //   $("#p-feature__headArea").css({
+      //     opacity: (1 * p)
+      //   });
+      // }).addTo(controller);
+
+      // new ScrollScene({
+      //   triggerElement: "#p-feature",
+      //   triggerHook: 0,
+      //   offset: window.innerHeight * 2,
+      //   duration: window.innerHeight * 1.5,
+      // }).on("progress", (prog) => {
+      //   const p = prog.progress;
+      //   $("#p-feature__iconItem01").css({
+      //     opacity: (1 * p)
+      //   });
+      //   $("#p-feature__iconItem01").css({
+      //     transform: `translate(0, ${100 - p*100}px)`
+      //   });
+      // }).addTo(controller);
+
+      // new ScrollScene({
+      //   triggerElement: "#p-feature",
+      //   triggerHook: 0,
+      //   offset: window.innerHeight * 2.7,
+      //   duration: window.innerHeight * 1.5,
+      // }).on("progress", (prog) => {
+      //   const p = prog.progress;
+      //   $("#p-feature__iconItem02").css({
+      //     opacity: (1 * p)
+      //   });
+      //   $("#p-feature__iconItem02").css({
+      //     transform: `translate(0, ${100 - p*100}px)`
+      //   });
+      // }).addTo(controller);
+
+      // new ScrollScene({
+      //   triggerElement: "#p-feature",
+      //   triggerHook: 0,
+      //   offset: window.innerHeight * 3.4,
+      //   duration: window.innerHeight * 1.5,
+      // }).on("progress", (prog) => {
+      //   const p = prog.progress;
+      //   $("#p-feature__iconItem03").css({
+      //     opacity: (1 * p)
+      //   });
+      //   $("#p-feature__iconItem03").css({
+      //     transform: `translate(0, ${100 - p*100}px)`
+      //   });
+      // }).addTo(controller);
+
+      // new ScrollScene({
+      //   triggerElement: "#p-feature",
+      //   triggerHook: 0,
+      //   offset: window.innerHeight * 6,
+      //   duration: window.innerHeight * 1,
+      // }).on("progress", (prog) => {
+      //   const p = prog.progress;
+      //   $("#p-feature__headArea").css({
+      //     opacity: 1 - (1 * p)
+      //   });
+      //   $("#p-feature__headArea").css({
+      //     transform: `translate(0, ${-p*30}px)`
+      //   });
+      //   $("#p-feature__iconItem01").css({
+      //     opacity: 1 - (1 * p)
+      //   });
+      //   $("#p-feature__iconItem01").css({
+      //     transform: `translate(0, ${-p*30}px)`
+      //   });
+      //   $("#p-feature__iconItem02").css({
+      //     opacity: 1 - (1 * p)
+      //   });
+      //   $("#p-feature__iconItem02").css({
+      //     transform: `translate(0, ${-p*30}px)`
+      //   });
+      //   $("#p-feature__iconItem03").css({
+      //     opacity: 1 - (1 * p)
+      //   });
+      //   $("#p-feature__iconItem03").css({
+      //     transform: `translate(0, ${-p*30}px)`
+      //   });
+      // }).addTo(controller);
+
+      // new ScrollScene({
+      //   triggerElement: "#p-feature",
+      //   triggerHook: 0,
+      //   offset: window.innerHeight * 7.9,
+      //   duration: window.innerHeight * .8,
+      // }).on("progress", (prog) => {
+      //   const p = prog.progress;
+      //   $("#bg-white").css({
+      //     opacity: (1 * p)
+      //   });
+      //   $("#bg-black").css({
+      //     opacity: 1 - (1 * p)
+      //   });
+      // }).addTo(controller);
 
       new ScrollScene({
-        triggerElement: "#p-feature",
-        triggerHook: 0,
-        offset: 0,
-        duration: window.innerHeight * .9,
-      }).on("progress", (prog) => {
-        const p = prog.progress;
-        $("#p-feature__headArea").css({
-          opacity: (1 * p)
-        });
-      }).addTo(controller);
-
-      new ScrollScene({
-        triggerElement: "#p-feature",
-        triggerHook: 0,
-        offset: window.innerHeight * 2,
-        duration: window.innerHeight * 1.5,
-      }).on("progress", (prog) => {
-        const p = prog.progress;
-        $("#p-feature__iconItem01").css({
-          opacity: (1 * p)
-        });
-        $("#p-feature__iconItem01").css({
-          transform: `translate(0, ${100 - p*100}px)`
-        });
-      }).addTo(controller);
-
-      new ScrollScene({
-        triggerElement: "#p-feature",
-        triggerHook: 0,
-        offset: window.innerHeight * 2.7,
-        duration: window.innerHeight * 1.5,
-      }).on("progress", (prog) => {
-        const p = prog.progress;
-        $("#p-feature__iconItem02").css({
-          opacity: (1 * p)
-        });
-        $("#p-feature__iconItem02").css({
-          transform: `translate(0, ${100 - p*100}px)`
-        });
-      }).addTo(controller);
-
-      new ScrollScene({
-        triggerElement: "#p-feature",
-        triggerHook: 0,
-        offset: window.innerHeight * 3.4,
-        duration: window.innerHeight * 1.5,
-      }).on("progress", (prog) => {
-        const p = prog.progress;
-        $("#p-feature__iconItem03").css({
-          opacity: (1 * p)
-        });
-        $("#p-feature__iconItem03").css({
-          transform: `translate(0, ${100 - p*100}px)`
-        });
-      }).addTo(controller);
-
-      new ScrollScene({
-        triggerElement: "#p-feature",
-        triggerHook: 0,
-        offset: window.innerHeight * 6,
-        duration: window.innerHeight * 1,
-      }).on("progress", (prog) => {
-        const p = prog.progress;
-        $("#p-feature__headArea").css({
-          opacity: 1 - (1 * p)
-        });
-        $("#p-feature__headArea").css({
-          transform: `translate(0, ${-p*30}px)`
-        });
-        $("#p-feature__iconItem01").css({
-          opacity: 1 - (1 * p)
-        });
-        $("#p-feature__iconItem01").css({
-          transform: `translate(0, ${-p*30}px)`
-        });
-        $("#p-feature__iconItem02").css({
-          opacity: 1 - (1 * p)
-        });
-        $("#p-feature__iconItem02").css({
-          transform: `translate(0, ${-p*30}px)`
-        });
-        $("#p-feature__iconItem03").css({
-          opacity: 1 - (1 * p)
-        });
-        $("#p-feature__iconItem03").css({
-          transform: `translate(0, ${-p*30}px)`
-        });
-      }).addTo(controller);
-
-      new ScrollScene({
-        triggerElement: "#p-feature",
-        triggerHook: 0,
-        offset: window.innerHeight * 7.9,
-        duration: window.innerHeight * .8,
+        triggerElement: "#p-point",
+        triggerHook: .8,
+        duration: window.innerHeight * .4,
       }).on("progress", (prog) => {
         const p = prog.progress;
         $("#bg-white").css({
@@ -363,6 +383,12 @@ $(function () {
         $("#bg-black").css({
           opacity: 1 - (1 * p)
         });
+        // $("#p-detail__item01").css({
+        //   opacity: 1 - (1 * p)
+        // });
+        // $("#p-detail__item02").css({
+        //   opacity: 1 - (1 * p)
+        // });
       }).addTo(controller);
 
 
