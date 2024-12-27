@@ -1,0 +1,7 @@
+地図の表示にあたってgoogle map apiを使用しています。そのため、google map apiのキーが必要です。
+下記リンクを参考にキーを取得してください。
+https://www.zenrin-datacom.net/solution/gmapsapi/api_key
+
+キーを取得後、index.htmlの下記のコードをキーに置き換えてください。
+index.html 158行目
+<script src="https://maps.googleapis.com/maps/api/js?key=ここにキーを入力"></script>
