@@ -1,0 +1,276 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #C30D23;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'Buildingsandundertherailwaytracksfree_ver';
+    src: url(assets/fonts/Buildingsandundertherailwaytracksfree_ver.otf) format('opentype');
+}
+
+.top {
+    height: 110vh;
+    background-color: #C30D23;
+    background-image: url(assets/images/bg-top.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.top__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+    position: relative;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes tiltLeft {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 9999;
+    opacity: 1;
+    animation-name: fadeOut;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.top__hebi {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    clip-path: inset(0 0 9% 0);
+    z-index: 1;
+
+    opacity: 0;
+    transform: translateX(100%);
+    animation-name: fadeInLeft;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.top__hebi__sita {
+    position: absolute;
+    top: -15px;
+    left: 0px;
+
+    opacity: 0;
+    transform: translateX(100%);
+    animation-name: fadeInLeft;
+    animation-duration: 1s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+.top__text__container {
+    margin-left: 100px;
+    margin-bottom: 60px;
+
+    opacity: 0;
+    transform: translateY(100%);
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+}
+
+.top__text__hebi {
+    animation-name: wiggle;
+    animation-duration: 1s;
+    animation-delay: 4.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+.top__logo__container {
+    padding-bottom: 85px;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+
+.top__under__gradation {
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    z-index: 2;
+}
+
+.top__logo {
+    width: 45%;
+    margin: 40px;
+}
+
+.logo__group {
+    width: 50%;
+    margin: 50px;
+}
+
+.top__group {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    position: relative;
+}
+
+.top__accent {
+    position: absolute;
+    top: -47px;
+    left: 123px;
+}
+
+.top__point {
+    position: absolute;
+    top: -131px;
+    left: -47px;
+    max-width: 68%;
+}
+
+.top__text__group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.top__text__group p {
+    font-family: 'Buildingsandundertherailwaytracksfree_ver';
+    font-size: 134px;
+    color: #fff;
+    clip-path: inset(20% 0 0 0);
+}
+
+.top__text__dappi {
+    width: 55%;
+}
+
+.second__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    background-color: #C30D23;
+    z-index: 2;
+    padding-bottom: 100px;
+}
+
+.second__text {
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 2.5;
+}

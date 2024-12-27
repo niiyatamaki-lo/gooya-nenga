@@ -1,6 +1,7 @@
 .l-wrap {
   overflow-x: hidden;
   width: 100%;
+  min-height: 100vh;
 
   &__contents {
     max-width: 2500px;
@@ -11,39 +12,5 @@
     background: #fff;
     position: relative;
     z-index: 0;
-  }
-
-  &__background--white {
-    background-color: rgba(255, 255, 255, 0.7) !important;
-    background-blend-mode: lighten;
-    background: url(/assets/images/bg_white.png);
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    opacity: 1;
-
-    @include sp {
-      height: 100vh !important
-      ;
-    }
-  }
-
-  &__background--black {
-    background: url(/assets/images/bg_black.png);
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    opacity: 0;
-
-    @include sp {
-      height: 100vh !important;
-    }
   }
 }

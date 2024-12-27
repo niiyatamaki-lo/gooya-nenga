@@ -1,37 +1,28 @@
 @charset "UTF-8";
 
-/*foundation---------------------------------*/
-@import "./foundation/reset.scss";
-@import "./foundation/variables.scss";
-@import "./foundation/functions.scss";
-@import "./foundation/mixins.scss";
-@import "./foundation/base.scss";
-/*-------------------------------------------*/
+// /*foundation---------------------------------*/
+// @import "./foundation/reset.scss";
+// @import "./foundation/variables.scss";
+// @import "./foundation/functions.scss";
+// @import "./foundation/mixins.scss";
+// @import "./foundation/base.scss";
+// /*-------------------------------------------*/
 
-/*utility------------------------------------*/
-@import "./utility/js.scss";
-@import "./utility/is.scss";
-/*-------------------------------------------*/
+// /*utility------------------------------------*/
+// @import "./utility/js.scss";
+// @import "./utility/is.scss";
+// /*-------------------------------------------*/
 
-/*layout-------------------------------------*/
-@import "./object/layout/wrap.scss";
-@import "./object/layout/header.scss";
-@import "./object/layout/footer.scss";
-/*-------------------------------------------*/
+// /*layout-------------------------------------*/
+// @import "./object/layout/wrap.scss";
+// @import "./object/layout/header.scss";
+// @import "./object/layout/footer.scss";
+// /*-------------------------------------------*/
 
-/*component----------------------------------*/
+// /*component----------------------------------*/
 
-/*-------------------------------------------*/
+// /*-------------------------------------------*/
 
 /*project------------------------------------*/
-@import "./object/project/hero.scss";
-@import "./object/project/concept.scss";
-@import "./object/project/detail.scss";
-@import "./object/project/feature.scss";
-@import "./object/project/point.scss";
-@import "./object/project/slider.scss";
-@import "./object/project/press_release.scss";
-@import "./object/project/article.scss";
-@import "./object/project/contact.scss";
-@import "./object/project/privacy_policy.scss";
+@import "./object/project/top.scss";
 /*-------------------------------------------*/

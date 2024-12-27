@@ -1,6 +1,6 @@
 import Registry from 'undertaker-registry';
 import gulp from 'gulp';
-const sass = require('gulp-sass')(require('node-sass'));
+const sass = require('gulp-sass')(require('sass'));
 import plumber from 'gulp-plumber';
 import autoprefixer from 'gulp-autoprefixer';
 import sassGlob from 'gulp-sass-glob';

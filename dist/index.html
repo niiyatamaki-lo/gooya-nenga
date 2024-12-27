@@ -2,570 +2,312 @@
 <html lang="ja">
 
 <head>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="slick.css">
+  <link rel="stylesheet" href="slick-theme.css">
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>AUROLA</title>
-  <meta name="description" content="AUROLA">
-  <meta name="keywords" content="AUROLA">
-  <meta name="format-detection" content="telephone=no">
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/assets/favicon/site.webmanifest">
-  <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#2c2c2c">
-  <meta name="msapplication-TileColor" content="#2c2c2c">
-  <meta name="theme-color" content="#2c2c2c">
-
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
-  <link rel="stylesheet" href="/main.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/1.3.0/jquery.scrollmagic.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/1.3.0/jquery.scrollmagic.debug.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>謹賀新年2025|株式会社GOOYA</title>
 </head>
 
 <body>
-  <div id="l-wrap" class="l-wrap">
-    <div class="l-wrap__contents">
-      <header class="l-header">
-        <div id="l-header__contents" class="l-header__contents">
-          <div class="l-header__logo">
-            <a class="l-header__logoLink" href="/index.html">
-              <img src="/assets/images/logo_black.png" alt="AUROLA">
-            </a>
-          </div>
-          <nav class="l-header__nav">
-            <ul class="l-header__list">
-              <li class="l-header__item">
-                <a class="l-header__link" href="/press_release.html">プレスリリース</a>
-              </li>
-              <li class="l-header__item">
-                <a class="l-header__link" href="/contact.html">CONTACT</a>
-              </li>
-              <li class="l-header__item">
-                <a class="l-header__link is-dlButton" href="/assets/pdf/sample.pdf" download="sample.pdf">カタログダウンロード</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="l-header__hamburger hamburgerToggle">
-            <span></span>
-            <span></span>
-          </div>
-          <nav class="l-header__hamburgerNav">
-            <div class="l-header__hamburgerContents">
-              <div class="l-header__hamburgerClose hamburgerToggle">
-                <span></span>
-                <span></span>
-              </div>
-              <ul class="l-header__hamburgerList">
-                <li class="l-header__hamburgerItem">
-                  <a class="l-header__hamburgerLink" href="/press_release.html">プレスリリース</a>
-                </li>
-                <li class="l-header__hamburgerItem">
-                  <a class="l-header__hamburgerLink" href="/assets/pdf/sample.pdf" download="sample.pdf">カタログダウンロード</a>
-                </li>
-                <li class="l-header__hamburgerItem">
-                  <a class="l-header__hamburgerLink" href="/contact.html">CONTACT</a>
-                </li>
-              </ul>
-              <div class="l-header__hamburgerLogo">
-                <img src="/assets/images/logo_mark_white.png" alt="AUROLA">
-              </div>
-            </div>
-          </nav>
+  <main>
+    <header>
+    </header>
+    <section class="top">
+      <div class="top__container">
+        <img src="assets/images/hebi.png" alt="hebi" class="top__hebi">
+        <img src="assets/images/hebi-sita.png" alt="hebi_sita" class="top__hebi__sita">
+
+        <div class="top__logo__container">
+          <img src="assets/images/gooya-logo.png" alt="top_logo" class="top__logo">
         </div>
-      </header>
-      <main class="l-wrap__main">
-        <div id="bg-black" class="l-wrap__background--black is-pc"></div>
-        <div id="bg-white" class="l-wrap__background--white is-pc"></div>
-        <section id="p-hero" class="p-hero">
-          <div id="p-hero__contents" class="p-hero__contents">
-            <div class="p-hero__inner">
-              <div class="p-hero__textArea">
-                <div class="p-hero__logo is-sp">
-                  <img src="/assets/images/logo_black.png" alt="AUROLA">
-                </div>
-                <h1 class="p-hero__head">リチウムイオン蓄電池システム</h1>
-                <p class="p-hero__text">ハイブリット型PSC + 蓄電池15kWh/10kWh/5kWh</p>
-                <ul class="p-hero__iconList">
-                  <li class="p-hero__iconItem">
-                    <div class="p-hero__icon">
-                      <img src="/assets/images/hero_icon01.png" alt="フル充電まで最短約3.3時間">
-                    </div>
-                    <p class="p-hero__detail">フル充電まで<br />最短約3.3時間</p>
-                  </li>
-                  <li class="p-hero__iconItem">
-                    <div class="p-hero__icon">
-                      <img src="/assets/images/hero_icon02.png" alt="長寿命12,000サイクル">
-                    </div>
-                    <p class="p-hero__detail">長寿命<br />12,000サイクル</p>
-                  </li>
-                  <li class="p-hero__iconItem">
-                    <div class="p-hero__icon">
-                      <img src="/assets/images/hero_icon03.png" alt="蓄電池ユニット増設可">
-                    </div>
-                    <p class="p-hero__detail">蓄電池ユニット<br />増設可</p>
-                  </li>
-                </ul>
-                <a class="p-hero__button" href="/assets/pdf/sample.pdf" download="sample.pdf">カタログをダウンロードする</a>
-              </div>
-              <div class="p-hero__itemView">
-                <img src="/assets/images/hero_item.png" alt="">
-              </div>
+
+        <!-- pc -->
+        <div class="top__text__container__pc">
+          <div class="top__group">
+            <img src="assets/images/point.png" alt="point" class="top__point">
+            <img src="assets/images/text-hebi.svg" alt="text_hebi" class="top__text__hebi">
+            <img src="assets/images/accent.svg" alt="accent" class="top__accent">
+            <div class="top__text__group">
+              <img src="assets/images/text-kinga.svg" alt="text_kinga" class="top__text__kinga">
+              <img src="assets/images/text-dappi.png" alt="text_dappi" class="top__text__dappi">
             </div>
           </div>
-        </section>
-        <section id="p-concept" class="p-concept">
-          <div id="p-concept__contents" class="p-concept__contents">
-            <div id="p-concept__image" class="p-concept__image"></div>
-            <div id="p-concept__inner" class="p-concept__inner">
-              <div class="p-concept__logo js-fade">
-                <img src="/assets/images/logo_mark_white.png" alt="AUROLA">
-              </div>
-              <h2 class="p-concept__head js-fade">“夜明け”が来る<br />新しい時代の始まり</h2>
-              <div id="p-concept__textArea" class="p-concept__textArea">
-                <p class="p-concept__text js-fade__bottom">
-                  スマートフォン、テレビ、エアコン、冷蔵庫、オーブン…<br />
-                  私たちの毎日は、様々な電化製品と、それを動かす「エネルギー」によって支えられています。私たちの生活に欠かせない「エネルギー」。でもそれは同時に、悩みのタネにもなっています。<br />
-                  世界情勢によって上昇する電気代、毎年負担が増える再エネ賦課金など…<br />
-                  エネルギーコストは家計にとって無視できない存在に。また、近年ますます甚大化・頻発化する自然災害による停電も、大切なご家族を脅かす心配事のひとつに。<br />
-                </p>
-                <p class="p-concept__text--under js-fade__bottom">
-                  AUROLAの「スマート蓄電池」には、あなたの生活に快適と安心をもたらすためのさまざまな機能が、ぎゅっと詰まっています。地球と家計に、優しく賢く。そしてもしもの時には、いのちを守るために。<br />
-                  さぁ、AUROLAと一緒に、スマートなエネルギーライフを始めませんか。<br />
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="p-detail" class="p-detail">
-          <div class="p-detail__contents">
-            <ul class="p-detail__list">
-              <li id="p-detail__item01" class="p-detail__item">
-                <div class="p-detail__inner">
-                  <div id="p-detail__image01" class="p-detail__image js-fade">
-                    <img src="/assets/images/item01.png" alt="">
-                  </div>
-                  <h3 id="p-detail__head01" class="p-detail__head js-fade__bottom">蓄電池ユニット</h3>
-                  <p id="p-detail__wat01" class="p-detail__wat js-fade__bottom">5kWh/10kWh/15kWh</p>
-                  <p id="p-detail__text01" class="p-detail__text js-fade__bottom">業界最高クラスの機能と性能を搭載した、住宅用蓄電池。<br
-                      class="is-pc" />
-                    日常生活では「経済的なエコライフ」を実現し、もしもの災害・停電時には「家族のいのちを守る」ための機能と安全性が、コンパクトなボディにギュッと詰まっています。</p>
-                </div>
-              </li>
-              <li id="p-detail__item02" class="p-detail__item">
-                <div class="p-detail__inner">
-                  <div id="p-detail__image02" class="p-detail__image js-fade">
-                    <img src="/assets/images/item02.png" alt="">
-                  </div>
-                  <h3 id="p-detail__head02" class="p-detail__head js-fade__bottom">ハイブリッド型PCS</h3>
-                  <p id="p-detail__wat02" class="p-detail__wat js-fade__bottom">　</p>
-                  <p id="p-detail__text02" class="p-detail__text js-fade__bottom">
-                    エネルギーを「つくる」から「つかう」へ、業界トップレベルの高効率で変換。ファンレス設計による静音稼動を実現しながらも、AIによる放電監視や停電時の自動切替など、家族にうれしい安心・安全性能もしっかり搭載しています。
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section id="p-feature" class="p-feature">
-          <div class="p-feature__contents">
-            <div class="p-feature__inner">
-              <div id="p-feature__headArea" class="p-feature__headArea js-fade">
-                <div class="p-feature__logo">
-                  <img src="/assets/images/logo_mark_white.png" alt="AUROLA">
-                </div>
-                <h2 class="p-feature__head">AUROLAの特徴</h2>
-              </div>
-              <ul class="p-feature__iconList">
-                <li id="p-feature__iconItem01" class="p-feature__iconItem js-fade__bottom">
-                  <div class="p-feature__icon">
-                    <img src="/assets/images/feature_icon01.png" alt="">
-                  </div>
-                  <p class="p-feature__point">5kWh単位で増設可能</p>
-                  <p class="p-feature__text">ライフステージに寄り添う拡張性</p>
-                  <p class="p-feature__detail">ユニット化された蓄電池は、5kWhごとに増設が可能。お子様の成長やご親族との同居など、その時々で必要な電池容量も変わっていくもの。<br />
-                    5kWh単位、最大 30kWh まで、あなたのライフステージに応じて拡張できます。</p>
-                  <p class="p-feature__annotation">※15kWh以上での設置の場合、消防への届出が必要です。<br />詳細は販売店にお問い合わせください。</p>
-                </li>
-                <li id="p-feature__iconItem02" class="p-feature__iconItem js-fade__bottom">
-                  <div class="p-feature__icon">
-                    <img src="/assets/images/feature_icon02.png" alt="">
-                  </div>
-                  <p class="p-feature__point">最高クラス、12,000サイクル</p>
-                  <p class="p-feature__text">業界最長の長寿命で、ずっと安心</p>
-                  <p class="p-feature__detail">
-                    蓄電池の寿命を表すサイクル数は、業界最長の「12,000」回。1日1サイクルとして、約33年もの長期使用を見込めます。あなたのいつもの生活に、ずっと、安心を提供します。</p>
-                  <p class="p-featrue__annotation">　</p>
-                </li>
-                <li id="p-feature__iconItem03" class="p-feature__iconItem js-fade__bottom">
-                  <div class="p-feature__icon">
-                    <img src="/assets/images/feature_icon03.png" alt="">
-                  </div>
-                  <p class="p-feature__point">厚み15cmのコンパクトデザイン</p>
-                  <p class="p-feature__text">薄型デザインで、省スペース</p>
-                  <p class="p-feature__detail">
-                    徹底的にムダを削ぎ落としたコンパクトなデザイン。厚み15cm、限られた敷地スペースにもラクラク設置が可能です。スタイリッシュな外観は、あなたのご自宅にも、そっと溶け込みます。</p>
-                  <p class="p-featrue__annotation">　</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <section id="p-point" class="p-point">
-          <div class="p-point__contents">
-            <ul class="p-point__list">
-              <li class="p-point__item">
-                <div id="p-point__image01" class="p-point__image js-fade"></div>
-                <div class="p-point__frame">
-                  <div id="p-point__frameInner01" class="p-point__frameInner js-fade__bottom">
-                    <div class="p-point__logo">
-                      <img src="/assets/images/logo_mark_black.png" alt="AUROLA">
-                    </div>
-                    <h3 class="p-point__head">エネルギーはつくられる時代から<br class="is-pc" />自宅でつくり、つかう時代へ</h3>
-                    <p class="p-point__text">
-                      近年、エネルギー問題への関心が高まり、世界的にも“持続可能”
-                      なエネルギーの活用が求められています。AUROLAも、“持続可
-                      能”な社会の実現に向けて、蓄電池システムを通じて、エネルギー
-                      がつくられるのを待つ時代から脱し、自宅で「つくる」「つかう」
-                      時代を創っていきます。
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li class="p-point__item">
-                <div id="p-point__image02" class="p-point__image js-fade"></div>
-                <div class="p-point__frame">
-                  <div id="p-point__frameInner02" class="p-point__frameInner js-fade__bottom">
-                    <div class="p-point__logo">
-                      <img src="/assets/images/logo_mark_black.png" alt="AUROLA">
-                    </div>
-                    <h3 class="p-point__head">突然の停電や災害トラブルから<br/>家族のいのちを守る</h3>
-                    <p class="p-point__text">
-                      いざという時の備えとして蓄電池を設置していれば、必要な時に非常用電気として使うことができます。停電発生後、5秒以内に自動で自立運転モードに切り替えが可能、２次災害トラブルに備えることができます。
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li class="p-point__item">
-                <div id="p-point__image03" class="p-point__image js-fade"></div>
-                <div class="p-point__frame">
-                  <div id="p-point__frameInner03" class="p-point__frameInner js-fade__bottom">
-                    <div class="p-point__logo">
-                      <img src="/assets/images/logo_mark_black.png" alt="AUROLA">
-                    </div>
-                    <h3 class="p-point__head">IoT + 蓄電池システムで、<br />スマートな暮らし</h3>
-                    <p class="p-point__text">
-                      スマートフォンやPCから、いつでも・どこでも、エネルギーの発電・使用・蓄電状況をリアルタイムチェック。最適な運転モードへの切替や各種設定も、遠隔で操作できます。IoTと蓄電池システムを使った、快適で効率的なスマートライフを。
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li class="p-point__item">
-                <div id="p-point__image04" class="p-point__image js-fade"></div>
-                <div class="p-point__frame">
-                  <div id="p-point__frameInner04" class="p-point__frameInner js-fade__bottom">
-                    <div class="p-point__logo">
-                      <img src="/assets/images/logo_mark_black.png" alt="AUROLA">
-                    </div>
-                    <h3 class="p-point__head">家庭の電力から<br />クリーンエネルギーに</h3>
-                    <p class="p-point__text">
-                      AUROLAの蓄電池システムとソーラーパネルを併用利用することで、日々消費しているエネルギーからCO2削減に貢献することができます。毎日消費する電力だからこそ、選択肢にクリーンエネルギーを。
-                    </p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section id="p-slider" class="p-slider">
-          <div id="sliderContents" class="p-slider__contents">
-            <div class="p-slider__logo">
-              <img src="/assets/images/slider_logo.png" alt="AUROLA">
-            </div>
-            <ul id="itemSlider" class="p-slider__list">
-              <li class="p-slider__item">
-                <div class="p-slider__inner">
-                  <div class="p-slider__image js-sliderItem01 is-bench-01-a"></div>
-                </div>
-              </li>
-              <li class="p-slider__item">
-                <div class="p-slider__inner">
-                  <div class="p-slider__image js-sliderItem02 is-bench-02-a"></div>
-                </div>
-              </li>
-              <li class="p-slider__item">
-                <div class="p-slider__inner">
-                  <div class="p-slider__image"></div>
-                </div>
-              </li>
-              <li class="p-slider__item">
-                <div class="p-slider__inner">
-                  <div class="p-slider__image"></div>
-                </div>
-              </li>
-            </ul>
-            <ul id="specSlider" class="p-slider__textList">
-              <li class="p-slider__textItem">
-                <div class="p-slider__imageBench is-sp-import">
-                  <div class="p-slider__benchImage js-benchImage" data-target="js-sliderItem01" data-image="a">
-                    <img src="/assets/images/slider_item01_a.png" alt="">
-                  </div>
-                  <div class="p-slider__benchImage js-benchImage" data-target="js-sliderItem01" data-image="b">
-                    <img src="/assets/images/slider_item01_b.png" alt="">
-                  </div>
-                  <div class="p-slider__benchImage js-benchImage" data-target="js-sliderItem01" data-image="c">
-                    <img src="/assets/images/slider_item01_c.png" alt="">
-                  </div>
-                </div>
-                <div class="p-slider__textInner">
-                  <div class="p-slider__spec">
-                    <div class="p-slider__specLogo">
-                      <img src="/assets/images/slider_logo.png" alt="AUROLA">
-                    </div>
-                    <h2 class="p-slider__label">ハイブリッド型PCS</h2>
-                    <p class="p-slider__specText">
-                      寸法　365 * 649 * 159mm<br />
-                      本体質量　19kg<br /><br />
-                      防水防塵保護等級 　IP65<br />
-                      冷却方式　自然空冷（ファンレス設計）<br />
-                      設置条件 　海抜 4,000 m 以下<br />
-                      動作温度範囲　-25℃ ～ 60℃<br />
-                      動作湿度範囲　0% ～ 100%
-                    </p>
-                    <div class="p-slider__imageBench is-pc-import">
-                      <div class="p-slider__benchImage js-benchImage" data-target="js-sliderItem01" data-image="a">
-                        <img src="/assets/images/slider_item01_a.png" alt="">
-                      </div>
-                      <div class="p-slider__benchImage js-benchImage" data-target="js-sliderItem01" data-image="b">
-                        <img src="/assets/images/slider_item01_b.png" alt="">
-                      </div>
-                      <div class="p-slider__benchImage js-benchImage" data-target="js-sliderItem01" data-image="c">
-                        <img src="/assets/images/slider_item01_c.png" alt="">
-                      </div>
-                    </div>
-                    <a href='/contact.html' class="p-slider__button is-pc">この製品について問い合わせる</a>
-                  </div>
-                  <div class="p-slider__detail">
-                    <p class="p-slider__detailText">
-                      直流（DC）入力（太陽光発電）<br />
-                      入力回路数　4<br />
-                      定格入力電圧　320 V<br />
-                      MPPT 電圧範囲　90 V ～ 560 V<br />
-                      最大入力電圧　600 V (450V屋内配線、600V屋外配線)<br />
-                      最大入力電流　16 A<br />
-                      最大短絡電流　25 A<br /><br />
-                      交流（AC）出力（系統連系）<br />
-                      定格出力　4,950 W<br />
-                      定格電圧　202 V<br />
-                      定格周波数　50 Hz/60 Hz<br />
-                      最大皮相電力　5,210 VA<br />
-                      電気方式　単相2線/単相3線<br />
-                      電力変換効率　97%<br /><br />
-                      交流（AC）出力（自立運転）<br />
-                      定格出力　2.45 kVA、4.95 kVA<br />
-                      定格電圧　101V、202V<br />
-                      定格周波数　50 Hz/60 Hz<br />
-                      電気方式　単相2線 (101 V)/単相3線 (202 V)<br />
-                      電力変換効率　97%
-                    </p>
-                  </div>
-                </div>
-                <a href='/contact.html' class="p-slider__button is-sp">この製品について問い合わせる</a>
-              </li>
-              <li class="p-slider__textItem">
-                <div class="p-slider__imageBench is-sp-import">
-                  <div class="p-slider__benchImage js-benchImage" data-target="js-sliderItem02" data-image="a">
-                    <img src="/assets/images/slider_item02_a.png" alt="">
-                  </div>
-                  <div class="p-slider__benchImage js-benchImage" data-target="js-sliderItem02" data-image="b">
-                    <img src="/assets/images/slider_item02_b.png" alt="">
-                  </div>
-                  <div class="p-slider__benchImage js-benchImage" data-target="js-sliderItem02" data-image="c">
-                    <img src="/assets/images/slider_item02_c.png" alt="">
-                  </div>
-                </div>
-                <div class="p-slider__textInner">
-                  <div class="p-slider__spec">
-                    <div class="p-slider__specLogo">
-                      <img src="/assets/images/slider_logo.png" alt="AUROLA">
-                    </div>
-                    <h2 class="p-slider__label">蓄電池 15kWh</h2>
-                    <p class="p-slider__specText">
-                      寸法　670 * 1,320 * 150mm<br />
-                      本体質量　163.8kg<br />
-                      定型容量　-<br />
-                      実効容量 15kWh
-                    </p>
-                    <div class="p-slider__imageBench is-pc-import">
-                      <div class="p-slider__benchImage js-benchImage" data-target="js-sliderItem02" data-image="a">
-                        <img src="/assets/images/slider_item02_a.png" alt="">
-                      </div>
-                      <div class="p-slider__benchImage js-benchImage" data-target="js-sliderItem02" data-image="b">
-                        <img src="/assets/images/slider_item02_b.png" alt="">
-                      </div>
-                      <div class="p-slider__benchImage js-benchImage" data-target="js-sliderItem02" data-image="c">
-                        <img src="/assets/images/slider_item02_c.png" alt="">
-                      </div>
-                    </div>
-                    <a href='/contact.html' class="p-slider__button is-pc">この製品について問い合わせる</a>
-                  </div>
-                  <div class="p-slider__detail">
-                    <p class="p-slider__detailText">
-                      電池種類　リン酸鉄リチウムイオン電池（LiFe電池）<br />
-                      最大入出力電圧　560V<br />
-                      定格電圧　385V<br />
-                      定格入力電圧範囲　350V～560V<br />
-                      定格入出力電力 4.5kW<br />
-                      防水防塵保護等級　IP65<br />
-                      冷却方式　自然空冷（ファンレス設計）<br />
-                      設置条件　海抜 4,000 m以下 / 海岸および汽水域から<br /><br />
-                      　　　500mを超える屋外設置<br />
-                      動作温度範囲　-20℃～ + 55℃<br />
-                      動作湿度範囲　5%～95%<br />
-                      保証期間　基本保証10年、延長保証最長15年（有償）<br />
-                      取り付け方法　床置き(標準) （屋内 / 屋外）<br />
-                      充電回復時間（PV/AC）　約 3.3時間 / 約 7.5時間<br />
-                      拡張性 最大で2台併設可能 (最大増設30kWhまで)
-                    </p>
-                  </div>
-                </div>
-                <a href='/contact.html' class="p-slider__button is-sp">この製品について問い合わせる</a>
-              </li>
-              <li class="p-slider__textItem">
-                <div class="p-slider__textInner">
-                  <div class="p-slider__spec">
-                    <div class="p-slider__specLogo">
-                      <img src="/assets/images/slider_logo.png" alt="AUROLA">
-                    </div>
-                    <h2 class="p-slider__label">蓄電池 10kWh</h2>
-                    <p class="p-slider__specText">
-                      寸法　670 * 960 * 150mm<br />
-                      本体質量　113.8kg<br />
-                      定型容量　-<br />
-                      実効容量 10kWh
-                    </p>
-                    <a href='/contact.html' class="p-slider__button is-pc">この製品について問い合わせる</a>
-                  </div>
-                  <div class="p-slider__detail">
-                    <p class="p-slider__detailText">
-                      電池種類　リン酸鉄リチウムイオン電池（LiFe電池）<br />
-                      最大入出力電圧　560V<br />
-                      定格電圧　385V<br />
-                      定格入力電圧範囲　350V～560V<br />
-                      定格入出力電力 3.0kW<br />
-                      防水防塵保護等級　IP65<br />
-                      冷却方式　自然空冷（ファンレス設計）<br />
-                      設置条件　海抜 4,000 m以下 / 海岸および汽水域から<br /><br />
-                      　　　500mを超える屋外設置<br />
-                      動作温度範囲　-20℃～ + 55℃<br />
-                      動作湿度範囲　5%～95%<br />
-                      保証期間　基本保証10年、延長保証最長15年（有償）<br />
-                      取り付け方法　床置き(標準) （屋内 / 屋外）<br />
-                      充電回復時間（PV/AC）　約 3.3時間 / 約 5.0時間<br />
-                      拡張性 最大で2台併設可能 (最大増設30kWhまで)
-                    </p>
-                  </div>
-                </div>
-                <a href='/contact.html' class="p-slider__button is-sp">この製品について問い合わせる</a>
-              </li>
-              <li class="p-slider__textItem">
-                <div class="p-slider__textInner">
-                  <div class="p-slider__spec">
-                    <div class="p-slider__specLogo">
-                      <img src="/assets/images/slider_logo.png" alt="AUROLA">
-                    </div>
-                    <h2 class="p-slider__label">蓄電池 5kWh</h2>
-                    <p class="p-slider__specText">
-                      寸法　670 * 600 * 150mm<br />
-                      本体質量　63.8kg<br />
-                      定型容量　-<br />
-                      実効容量 5kWh
-                    </p>
-                    <a href='/contact.html' class="p-slider__button is-pc">この製品について問い合わせる</a>
-                  </div>
-                  <div class="p-slider__detail">
-                    <p class="p-slider__detailText">
-                      電池種類　リン酸鉄リチウムイオン電池（LiFe電池）<br />
-                      最大入出力電圧　560V<br />
-                      定格電圧　385V<br />
-                      定格入力電圧範囲　350V～560V<br />
-                      定格入出力電力 1.5kW<br />
-                      防水防塵保護等級　IP65<br />
-                      冷却方式　自然空冷（ファンレス設計）<br />
-                      設置条件　海抜 4,000 m以下 / 海岸および汽水域から<br /><br />
-                      　　　500mを超える屋外設置<br />
-                      動作温度範囲　-20℃～ + 55℃<br />
-                      動作湿度範囲　5%～95%<br />
-                      保証期間　基本保証10年、延長保証最長15年（有償）<br />
-                      取り付け方法　床置き(標準) （屋内 / 屋外）<br />
-                      充電回復時間（PV/AC）　約 3.3時間 / 約 3.3時間<br />
-                      拡張性 最大で2台併設可能 (最大増設30kWhまで)
-                    </p>
-                  </div>
-                </div>
-                <a href='/contact.html' class="p-slider__button is-sp">この製品について問い合わせる</a>
-              </li>
-            </ul>
-          </div>
-        </section>
-      </main>
-      <footer class="l-footer">
-        <div class="l-footer__contents">
-          <div class="l-footer__inner">
-            <div class="l-footer__navArea">
-              <div class="l-footer__logo">
-                <img src="/assets/images/footer_logo.png" alt="AUROLA">
-              </div>
-              <nav class="l-footer__nav">
-                <ul class="l-footer__list">
-                  <li class="l-footer__item">
-                    <a class="l-footer__link" href="/press_release.html">プレスリリース</a>
-                  </li>
-                  <li class="l-footer__item">
-                    <a class="l-footer__link" href="/assets/pdf/sample.pdf" download="sample.pdf">カタログダウンロード</a>
-                  </li>
-                  <li class="l-footer__item">
-                    <a class="l-footer__link" href="/contact.html">CONTACT</a>
-                  </li>
-                  <li class="l-footer__item">
-                    <a class="l-footer__link" href="/privacy_policy.html">プライバシーポリシー</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <div class="l-footer__wave">
-              <img src="/assets/images/footer_wave.png" alt="">
-            </div>
-          </div>
-          <p class="l-footer__copyright">&copy; Aurola 2023</p>
         </div>
-      </footer>
+        <!-- sp -->
+        <div class="top__text__container__sp">
+          <div class="top__group">
+            <img src="assets/images/point-sp.png" alt="point_sp" class="top__point__sp">
+            <img src="assets/images/text-kinga.svg" alt="text_kinga" class="top__text__kinga">
+            <div class="top__text__group">
+              <img src="assets/images/text-hebi.svg" alt="text_hebi" class="top__text__hebi">
+              <img src="assets/images/accent.svg" alt="accent" class="top__accent">
+              <img src="assets/images/text-dappi-sp.png" alt="text_dappi" class="top__text__dappi">
+            </div>
+          </div>
+        </div>
+
+        <!-- pc -->
+        <div class="top__logo__container__pc">
+          <img src="assets/images/logo-group.png" alt="logo_group" class="logo__group">
+        </div>
+        <!-- sp -->
+        <div class="top__logo__container__sp">
+          <img src="assets/images/point2-sp.png" alt="point" class="top__point__sp">
+          <img src="assets/images/logo-group-sp.png" alt="logo_group" style="opacity: 0;">
+        </div>
+
+        <img src="assets/images/hebi-sp.png" alt="hebi" class="top__hebi__sp">
+        <div class="top__hebi__sita__sp">
+          <div class="logo__group__sp">
+            <img src="assets/images/logo-group-sp.png" alt="logo_group" class="logo__group__sp__img">
+            <img src="assets/images/point2-sp.png" alt="point2" class="point2__sp">
+            <img src="assets/images/hebi-sita-sp.png" alt="hebi_sita" class="hebi__sita__sp__img">
+          </div>
+        </div>
+
+        <img src="assets/images/under-gradation.png" alt="under_gradation" class="top__under__gradation">
+      </div>
+    </section>
+    <section class="">
+      <div class="second__container">
+        <p class="second__text pc">
+          旧年中は格別のご愛顧を賜り誠にありがとうございました。<br>
+          2024年は、20周年迎え、しなやかに地を這いながらも、<br>
+          未来への道を着実に切り拓いた年でした。<br>
+          <br>
+          2025年は、GOOYAグループとして、巳（み）のごとくしなやかさと柔軟さを持ち、<br>
+          確かな成長を遂げながら、お客様にさらなる価値をお届けする覚悟です。<br>
+          <br>
+          より一層のご愛顧のほどよろしくお願い申し上げます。<br>
+          皆様のご健康とますますのご活躍をお祈りいたします。
+        </p>
+        <p class="second__text sp">
+          旧年中は格別のご愛顧を賜り誠に<br>
+          ありがとうございました。<br>
+          2024年は、20周年迎え、<br>
+          しなやかに地を這いながらも、<br>
+          未来への道を着実に切り拓いた年でした。<br>
+          <br>
+          2025年は、GOOYAグループとして、<br>
+          巳（み）のごとくしなやかさと柔軟さを持ち、<br>
+          確かな成長を遂げながら、<br>
+          お客様にさらなる価値をお届けする覚悟です。<br>
+          <br>
+          より一層のご愛顧のほど<br>
+          よろしくお願い申し上げます。<br>
+          皆様のご健康とますますの<br>
+          ご活躍をお祈りいたします。
+        </p>
+      </div>
+    </section>
+
+    <section class="third">
+      <ul class="corporate_image">
+        <li class="corporate_image_list"><img class="cash_clear" src="assets/images/img_gooya_vision01.png" alt="GOOYA"></li>
+        <li class="corporate_image_list"><img class="cash_clear" src="assets/images/img_gooya_vision02.png" alt="CAREER BEAT"></li>
+        <li class="corporate_image_list"><img class="cash_clear" src="assets/images/img_gooya_vision03.png" alt="hitomedia"></li>
+        <li class="corporate_image_list"><img class="cash_clear" src="assets/images/img_gooya_vision04.png" alt="4D"></li>
+      </ul>
+      <div class="office_map">
+        <div class="ttl">base<span class="caption">拠点</span></div>
+        <div class="map-wrap">
+          <div id="map-shibuya" class="map"></div>
+          <div id="map-akihabara" class="map"></div>
+          <div id="map-sapporo" class="map"></div>
+          <div id="map-sendai" class="map"></div>
+          <div id="map-fukuoka" class="map"></div>
+          <div id="map-okinawa" class="map"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="office_view">
+      <div class="slider">
+        <div><img src="assets/images/office_01.jpg" alt="オフィス画像1"></div>
+        <div><img src="assets/images/office_02.jpg" alt="オフィス画像2"></div>
+        <div><img src="assets/images/office_03.jpg" alt="オフィス画像3"></div>
+        <div><img src="assets/images/office_04.jpg" alt="オフィス画像4"></div>
+        <div><img src="assets/images/office_05.jpg" alt="オフィス画像5"></div>
+        <div><img src="assets/images/office_01.jpg" alt="オフィス画像1"></div>
+        <div><img src="assets/images/office_02.jpg" alt="オフィス画像2"></div>
+        <div><img src="assets/images/office_03.jpg" alt="オフィス画像3"></div>
+        <div><img src="assets/images/office_04.jpg" alt="オフィス画像4"></div>
+        <div><img src="assets/images/office_05.jpg" alt="オフィス画像5"></div>
+      </div>
     </div>
-  </div>
-  <script type="text/javascript" src="/main.js"></script>
-  <script type="text/javascript">
-    $(function () {
-      $('#itemSlider').slick({
-        infinite: false,
-        dots: true,
-        speed: 400,
-        asNavFor: "#specSlider",
+
+    <footer class="footer">
+      <div class="footer_logo">
+        <p class="footer_catch_copy font-noto-sans">未来を笑顔に　- Smiles for the future -</p>
+        <img class="cash_clear" src="assets/images/gooya-logo.png" width="128" alt="GOOYA HOLDINGS">
+        <p class="copyright">GOOYA Holdings Co., Ltd.</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="slick.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBltm1ku_7ktgDni2Imuam3uewkxCJciP0"></script>
+  <script>
+    function initMap() {
+      const shibuya = {
+        lat: 35.6614846308598,
+        lng: 139.70363170533474
+      };
+      const akihabara = {
+        lat: 35.70075676211068, 
+        lng: 139.77939272599357
+      };
+      const sapporo = {
+        lat: 43.05980483312654,
+        lng: 141.35045469744097
+      };
+      const sendai = {
+        lat: 38.25749469135684, 
+        lng: 140.876213854923
+      }
+      const fukuoka = {
+        lat: 33.58643794022965,
+        lng: 130.42385662406897
+      }
+      const okinawa = {
+        lat: 26.214807358166,
+        lng: 127.6766566545337
+      }
+
+      const grayStyle = [
+        {
+          featureType: "all",
+          elementType: "all",
+          stylers: [
+            { saturation: -100 },
+            { lightness: 0 }
+          ]
+        }
+      ];
+
+      const mapShibuya = new google.maps.Map(document.getElementById("map-shibuya"), {
+        center: shibuya,
+        zoom: 15,
+        styles: grayStyle,
       });
-      $('#specSlider').slick({
-        infinite: false,
-        arrows: false,
+      
+      const mapAkihabara = new google.maps.Map(document.getElementById("map-akihabara"), {
+        center: akihabara,
+        zoom: 15,
+        styles: grayStyle,
+      });
+      
+      const mapSapporo = new google.maps.Map(document.getElementById("map-sapporo"), {
+        center: sapporo,
+        zoom: 15,
+        styles: grayStyle,
+      });
+
+      const mapSendai = new google.maps.Map(document.getElementById("map-sendai"), {
+        center: sendai,
+        zoom: 15,
+        styles: grayStyle,
+      });
+
+      const mapFukuoka = new google.maps.Map(document.getElementById("map-fukuoka"), {
+        center: fukuoka,
+        zoom: 15,
+        styles: grayStyle,
+      });
+
+      const mapOkinawa = new google.maps.Map(document.getElementById("map-okinawa"), {
+        center: okinawa,
+        zoom: 15,
+        styles: grayStyle,
+      });
+
+      new google.maps.Marker({
+        position: shibuya,
+        map: mapShibuya,
+        animation: google.maps.Animation.BOUNCE,
+        icon: {
+          url: 'assets/images/pin_shibuya.svg'
+        }
+      });
+
+      new google.maps.Marker({
+        position: akihabara,
+        map: mapAkihabara,
+        animation: google.maps.Animation.BOUNCE,
+        icon: {
+          url: 'assets/images/pin_akihabara.svg'
+        }
+      });
+
+      new google.maps.Marker({
+        position: sapporo,
+        map: mapSapporo,
+        animation: google.maps.Animation.BOUNCE,
+        icon: {
+          url: 'assets/images/pin_sapporo.svg'
+        }
+      });
+
+      new google.maps.Marker({
+        position: sendai,
+        map: mapSendai,
+        animation: google.maps.Animation.BOUNCE,
+        icon: {
+          url: 'assets/images/pin_sendai.svg'
+        }
+      });
+
+      new google.maps.Marker({
+        position: fukuoka,
+        map: mapFukuoka,
+        animation: google.maps.Animation.BOUNCE,
+        icon: {
+          url: 'assets/images/pin_fukuoka.svg'
+        }
+      });
+
+      new google.maps.Marker({
+        position: okinawa,
+        map: mapOkinawa,
+        animation: google.maps.Animation.BOUNCE,
+        icon: {
+          url: 'assets/images/pin_okinawa.svg'
+        }
+      });
+    }
+    document.addEventListener('DOMContentLoaded', initMap);
+  </script>
+  <script>
+    $(function(){
+      $('.slider').slick({
+        centerMode: true,
+        centerPadding: '50px',
+        slidesToShow: 3,
         dots: false,
-        fade: true,
-        speed: 400,
-        swipe: false,
+        autoplay: true,
+        prevArrow: '<div class="slick-prev"><img src="assets/images/icn_left.png" alt="前へ"></div>',
+        nextArrow: '<div class="slick-next"><img src="assets/images/icn_right.png" alt="次へ"></div>',
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              centerMode: true,
+              centerPadding: '10%',
+              slidesToShow: 1
+            }
+          },
+          {
+            breakpoint: 1367,
+            settings: {
+              centerMode: true,
+              centerPadding: '5%',
+              slidesToShow: 3
+            }
+          }
+        ]
       });
     });
   </script>
