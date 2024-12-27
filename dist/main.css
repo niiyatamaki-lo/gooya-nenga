@@ -152,7 +152,7 @@ ul, ol {
     top: 0px;
     left: 0px;
     clip-path: inset(0 0 9% 0);
-    z-index: 1;
+    z-index: 2;
 
     opacity: 0;
     transform: translateX(100%);
@@ -170,6 +170,7 @@ ul, ol {
     position: absolute;
     top: -15px;
     left: 0px;
+    z-index: 1;
 
     opacity: 0;
     transform: translateX(100%);
@@ -210,7 +211,7 @@ ul, ol {
     @media screen and (max-width: 768px) {
         display: block;
         position: absolute;
-        bottom: 40px;
+        bottom: 65px;
         max-width: 120%;
         right: -96px;
         opacity: 0;
@@ -311,7 +312,7 @@ ul, ol {
     @media screen and (max-width: 768px) {
         position: relative;
         display: block;
-        margin-top: 27px;
+        margin-top: 55px;
         opacity: 0;
         animation-name: fadeIn;
         animation-duration: 1s;
@@ -351,12 +352,11 @@ ul, ol {
 
 .logo__group__sp__img {
     position: absolute;
-    top: -138px;
-    left: 45%;
+    top: -155px;
+    left: 47%;
     transform: translateX(-50%);
-    width: 95%;
-    max-width: 412px;
-    
+    width: 100%;
+    max-width: 472px;
     opacity: 0;
     animation-name: fadeIn;
     animation-duration: 1s;
@@ -366,11 +366,10 @@ ul, ol {
 
 .point2__sp {
     position: absolute;
-    top: -139px;
+    top: -146px;
     left: 48%;
     transform: translateX(-50%);
-    max-width: 95%;
-
+    max-width: 100%;
     opacity: 0;
     animation-name: fadeIn;
     animation-duration: 1s;
@@ -407,7 +406,7 @@ ul, ol {
     top: -131px;
     left: -47px;
     max-width: 68%;
-
+    z-index: 0;
     @media screen and (max-width: 768px) {
         bottom: 0px;
         left: 0px;
