@@ -108,15 +108,17 @@
         <li class="corporate_image_list"><img class="cash_clear" src="assets/images/img_gooya_vision01.png" alt="GOOYA"></li>
         <li class="corporate_image_list"><img class="cash_clear" src="assets/images/img_gooya_vision02.png" alt="CAREER BEAT"></li>
         <li class="corporate_image_list"><img class="cash_clear" src="assets/images/img_gooya_vision03.png" alt="hitomedia"></li>
-        <li class="corporate_image_list"><img class="cash_clear" src="assets/images/img_gooya_vision04.png" alt="4D"></li>
+        <!-- <li class="corporate_image_list"><img class="cash_clear" src="assets/images/img_gooya_vision04.png" alt="4D"></li> -->
       </ul>
       <div class="office_map">
         <div class="ttl">base<span class="caption">拠点</span></div>
         <div class="map-wrap">
           <div id="map-shibuya" class="map"></div>
+          <div id="map-loppongi" class="map"></div>
           <div id="map-akihabara" class="map"></div>
           <div id="map-sapporo" class="map"></div>
           <div id="map-sendai" class="map"></div>
+          <div id="map-osaka" class="map"></div>
           <div id="map-fukuoka" class="map"></div>
           <div id="map-okinawa" class="map"></div>
         </div>
@@ -145,6 +147,10 @@
         <p class="copyright">GOOYA Holdings Co., Ltd.</p>
       </div>
     </footer>
+
+    <a href="https://20th.gooya-hd.co.jp/" class="goto20_button">
+      <img src="assets/images/goto20.svg" alt="GOTO 20">
+    </a>
   </main>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -155,6 +161,10 @@
       const shibuya = {
         lat: 35.6614846308598,
         lng: 139.70363170533474
+      };
+      const loppongi = {
+        lat: 35.65821647015393,
+        lng: 139.72759451250002
       };
       const akihabara = {
         lat: 35.70075676211068, 
@@ -168,6 +178,10 @@
         lat: 38.25749469135684, 
         lng: 140.876213854923
       }
+      const osaka = {
+        lat: 34.69940086563057,
+        lng: 135.49937245307385
+      };
       const fukuoka = {
         lat: 33.58643794022965,
         lng: 130.42385662406897
@@ -193,6 +207,12 @@
         zoom: 15,
         styles: grayStyle,
       });
+
+      const mapLoppongi = new google.maps.Map(document.getElementById("map-loppongi"), {
+        center: loppongi,
+        zoom: 15,
+        styles: grayStyle,
+      });
       
       const mapAkihabara = new google.maps.Map(document.getElementById("map-akihabara"), {
         center: akihabara,
@@ -208,6 +228,12 @@
 
       const mapSendai = new google.maps.Map(document.getElementById("map-sendai"), {
         center: sendai,
+        zoom: 15,
+        styles: grayStyle,
+      });
+
+      const mapOsaka = new google.maps.Map(document.getElementById("map-osaka"), {
+        center: osaka,
         zoom: 15,
         styles: grayStyle,
       });
@@ -230,6 +256,15 @@
         animation: google.maps.Animation.BOUNCE,
         icon: {
           url: 'assets/images/pin_shibuya.svg'
+        }
+      });
+
+      new google.maps.Marker({
+        position: loppongi,
+        map: mapLoppongi,
+        animation: google.maps.Animation.BOUNCE,
+        icon: {
+          url: 'assets/images/pin_loppongi.svg'
         }
       });
 
@@ -257,6 +292,15 @@
         animation: google.maps.Animation.BOUNCE,
         icon: {
           url: 'assets/images/pin_sendai.svg'
+        }
+      });
+
+      new google.maps.Marker({
+        position: osaka,
+        map: mapOsaka,
+        animation: google.maps.Animation.BOUNCE,
+        icon: {
+          url: 'assets/images/pin_osaka.svg'
         }
       });
 

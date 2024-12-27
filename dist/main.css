@@ -486,7 +486,7 @@ ul, ol {
 }
 
 .corporate_image_list {
-    width: var(--corporate-image-list-width, calc(100% / 4));
+    width: var(--corporate-image-list-width, calc(100% / 3));
     transition: width .2s ease;
 
     @media screen and (max-width: 768px) {
@@ -589,3 +589,33 @@ ul, ol {
     text-align: center;
     letter-spacing: 0.15rem;
 } 
+
+.goto20_button {
+    position: fixed;
+    right: -5px;
+    bottom: 20px;
+    z-index: 1000;
+    transition: opacity 0.3s;
+
+    @media screen and (max-width: 768px) {
+        right: -60px;
+        bottom: 16px;
+    }
+  }
+  
+  .goto20_button:hover {
+    opacity: 0.8;
+  }
+  
+  .goto20_button img {
+    width: 86%;
+    height: auto;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+
+  }
+  
+  @media screen and (max-width: 768px) {
+    .goto20_button img {
+      width: 50%;
+    }
+  }
